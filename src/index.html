@@ -1,14 +1,20 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>MILLENNIUM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <div class ="textArea">
+      <input type="text" id="textToEncode" value="" placeholder="What message do you need to be a secret?">
+      <input type="number" id="offset" value="" placeholder="Security key">
+      <textarea name="textarea" id= "textResult" placeholder="This is your crip message"></textarea>
+  </div>
+  <button id="encode" class="start">ENCODE</button>
+  <button id="decode" class = "start">DECODE</button> 
     <script src="index.js" type="module"></script>
   </body>
 </html>
