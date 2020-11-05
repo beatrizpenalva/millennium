@@ -1,21 +1,11 @@
 const cipher = {
-  encode(messageToEncode, offset) {
-    //Sempre declarar os números que são usadas em setenças para que outros programadores que leia seu código saibam do que se trata
+  encode(offset, messageToEncode) {
     const alphabetSize = 26;
     const aASCIIcode = 65;
     let finalMessage = "";
-    //Condição inicial: 1o índice da string - JS lê string como array | Condição final: rodar o tamanho da string | Repetir para cada string    
     for (let i = 0; i < messageToEncode.length; i++) {
-      // Achar o código ASCII da letra       
       const codeASCII = messageToEncode.charCodeAt(i)
-      // Condicional para cifrar apenas o intervalo de letras maiúsculas do códgioASCII
       if (64 < codeASCII && codeASCII < 91) {
-        /* Criptografar
-          Achar o código ASCII da letra - código A = código do alfabeto (0-25)
-         Somar o deslocamento e garantir o giro no alfabeto (módulo tamnho do alfabeto)
-         Somar novamente o código da primeira letra ASC para o entendimento do JS
-         Retorna r a string a partir do número do código
-         */
         const cipher = (codeASCII - aASCIIcode + offset) % alphabetSize + aASCIIcode;
         finalMessage += String.fromCharCode(cipher);
       } else {
@@ -24,22 +14,18 @@ const cipher = {
     }
     return finalMessage;
   },
-  decode(messageToEncode, offset) {
-    /* Descriptografar: caminho inverso
-    Cifrar: letra cifrada = (letra a cifrar + offset) % alfabeto;
-    1. Achar o número de voltas: número interiro (offset/tamanho do alfabeto);
-    2. Somar o código da letra a decifrar com (tamanho do alfabeto x o número de giro)
-    3. Diminuir o offset para achar o código da letra cifrada
-    letra cifrada + [número inteiro(offset/alfabeto)] * alfabeto - offset = letra a cifrar
-     */
+  decode(offset, messageToEncode) {
     const alphabetSize = 26;
     const aASCIIcode = 65;
     let finalMessage = "";
-    const y = Math.floor(offset / alphabetSize) * alphabetSize;
     for (let i = 0; i < messageToEncode.length; i++) {
       const codeASCII = messageToEncode.charCodeAt(i)
       if (64 < codeASCII && codeASCII < 91) {
-        const cipher = (codeASCII - aASCIIcode + y - offset) + aASCIIcode;
+        //const y = Math.floor(offset / alphabetSize) * alphabetSize;
+        // let decodificado = ((decifrar - 65 -(offsetdec % 26) + 26) % 26) + 65;
+        //offset % alphabetSize = tirando o número de vezes que roda o alfabeto todo temos o real offset
+        // módulo para garantir o giro caso exceda
+        const cipher = ((codeASCII - aASCIIcode - (offset % alphabetSize) + 26) % alphabetSize + aASCIIcode);
         finalMessage += String.fromCharCode(cipher);
       } else {
         finalMessage += String.fromCharCode(codeASCII);
@@ -48,5 +34,12 @@ const cipher = {
     return finalMessage;
   }
 };
-//o que é um módulo? módulo é um objeto? por quê eu exporto se eu posso linkar um arquivo no outro? que nome eu dou pra y? por quê eu tenho que apagar a função?
 export default cipher;
+/*
+decode
+
+caixa para texto; > colocar na minha variavel texto
+caixa para o offset; colocar na minha variavel offset
+display do resultado
+botão codificar > onclick ou event que chame o botão e
+*/
