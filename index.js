@@ -15,15 +15,15 @@ function printTextDecoded() {
 }
 document.getElementById("copyText").addEventListener('click', copyTextResult);
 function copyTextResult() {
-    const messageToCopy = document.getElementById("textResult").select();
+    document.getElementById("textResult").select();
     document.execCommand("copy");
 }
-document.getElementById("clear").addEventListener('click', clearText);
-function clearText() {
+document.getElementById("clean").addEventListener('click', cleanText);
+function cleanText() {
     document.getElementById("textToEncode").value = "";
 }
 document.getElementById("restart").addEventListener('click', restartCipher);
-function restartCipher(){
+function restartCipher() {
     document.getElementById("textResult").value = "";
     document.getElementById("textToEncode").value = "";
     document.getElementById("offset").value = "";

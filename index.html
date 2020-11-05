@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>MILLENNIUM</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./img/img_message.svg/" />
 </head>
-
 <body>
   <header>
     MILLENNIUM <strong>.</strong>
   </header>
-
   <main>
     <div class="leftSide">
       <div class="textArea">
-        <input type="number" id="offset" value="" placeholder="Type your security key">
-        <textarea type="text" id="textToEncode" value="" placeholder="Type your message"></textarea>
+        <input type="number" min="1" max="999999" class="textMessage" id="offset" value=""
+          placeholder="Type your security key">
+        <textarea type="text" maxlength="5000" class="textMessage" id="textToEncode" value=""
+          placeholder="Type your message"></textarea>
       </div>
       <div class="buttonArea">
         <button class="button" id="encode">ENCODE</button>
         <button class="button" id="decode">DECODE</button>
-        <button class="button" id="clear">CLEAR</button>
+        <button class="button" id="clean">CLEAR</button>
       </div>
     </div>
     <div class="rightSide">
       <div class="textArea">
-        <textarea name="offset" id="securityKey" placeholder="Do not forget to save this"></textarea>
-        <textarea name="textarea" id="textResult" placeholder="Result"></textarea>
+        <textarea name="textarea" class="textMessage" id="textResult" placeholder="Encrypted text"></textarea>
         <div class="buttonArea">
           <button class="button" id="restart">START AGAIN</button>
           <button class="button" id="copyText">COPY</button>
         </div>
       </div>
+    </div>
   </main>
-
   <footer>DEVELOPED BY <a href="https://github.com/beatrizpenalva" target="blank" title="GITHUB PROFILE">
       @BEATRIZPENALVA</a> | FIND ME ON <a href="https://www.linkedin.com/in/beatrizpenalva/" target="blank"
       title="LINKEDIN PROFILE">
       LINKEDIN </a>
   </footer>
-
   <script src="index.js" type="module"></script>
 </body>
-
 </html>
