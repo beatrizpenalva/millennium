@@ -1,7 +1,7 @@
 ## Millennium
 An app for journalists and their informants exchange messages encoded by the Caesar Cipher method 
 
-![App](src/img/vd_readme_app.gif)
+![](.src/img/vd_readme_app.gif)
 
 ## Índice
 
