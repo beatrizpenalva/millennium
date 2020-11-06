@@ -35,7 +35,7 @@ How to use the app step by step:
 * If you type anything wrong you can click on ‘clean’
 * If you want to start to code or decode a new message click on ‘start again’
 
-If you want to try it click [here](https://beatrizpenalva.github.io/SAP005-cipher/).
+If you want to try it click [here](https://beatrizpenalva.github.io/Millennium/).
 
 ### User Interface
 
