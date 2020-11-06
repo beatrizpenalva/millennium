@@ -41,7 +41,7 @@ If you want to try it click [here](https://beatrizpenalva.github.io/SAP005-ciphe
 
 The User Interface's aesthetic was inspired by the true protagonist of the Millennium trilogy, the hacker Wasp, also known as Lisbeth Salander. Therefore, the color palette was based on Salander's style and the background image in her profession.
 
-![Sketch](src/img/sketch.png)
+![Sketch](src/img/sketch.png){width=40px height=400px})
 
 ### Build With
 

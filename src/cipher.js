@@ -14,7 +14,7 @@ const cipher = {
       }
       return finalMessage;
     } else {
-      throw new TypeError;
+      throw new TypeError ('invalid offset or string');
     }
   },
   decode(offset, messageToEncode) {
@@ -32,7 +32,7 @@ const cipher = {
       }
       return finalMessage;
     } else {
-      throw new TypeError;
+      throw new TypeError ('invalid offset or string');
     }
   }
 };

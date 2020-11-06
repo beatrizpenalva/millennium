@@ -21,6 +21,7 @@ function copyTextResult() {
 document.getElementById("clean").addEventListener('click', cleanText);
 function cleanText() {
     document.getElementById("textToEncode").value = "";
+    document.getElementById("offset").value = "";
 }
 document.getElementById("restart").addEventListener('click', restartCipher);
 function restartCipher() {
