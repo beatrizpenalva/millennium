@@ -1,7 +1,7 @@
 ## Millennium
 An app for journalists and their informants exchange messages encoded by the Caesar Cipher method 
 
-![](.src/img/vd_readme_app.gif)
+![WebbApp](src/img/vd_readme_app.gif)
 
 ## Índice
 
@@ -35,13 +35,13 @@ How to use the app step by step:
 * If you type anything wrong you can click on ‘clean’
 * If you want to start to code or decode a new message click on ‘start again’
 
-If you want to try it click [here](https://undraw.co/).
+If you want to try it click [here](https://beatrizpenalva.github.io/SAP005-cipher/).
 
 ### User Interface
 
 The User Interface's aesthetic was inspired by the true protagonist of the Millennium trilogy, the hacker Wasp, also known as Lisbeth Salander. Therefore, the color palette was based on Salander's style and the background image in her profession.
 
-![Process](src/img/vd_readme_app.gif)
+![Sketch](src/img/sketch.png)
 
 ### Build With
 
