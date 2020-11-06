@@ -51,7 +51,7 @@ The User Interface's aesthetic was inspired by the true protagonist of the Mille
 
 ### Acknowledgments
 
-* @laboratoria
+* [Laboratoria](https://www.laboratoria.la/)
 * Inspired by the Millennium Trilogy, Stieg Larsson
 * Background Image by Katerina Limpitsouni - [unDraw](https://undraw.co/)
 
