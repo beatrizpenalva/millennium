@@ -16,7 +16,7 @@ An app for journalists and their informants exchange messages encoded by the Cae
 
 ## About
 
-The Brazil Federal Constitution of 1988 in its Art. 5th, item XIV, institutes "access to information is guaranteed to all and confidentiality of the source is guaranteed, when necessary for professional practice". 
+The [Brazil Federal Constitution] (http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm) of 1988 in its Art. 5th, item XIV, institutes "access to information is guaranteed to all and confidentiality of the source is guaranteed, when necessary for professional practice". 
 
 However, recent episodes of national policy exposed the fragility of the youth Brazilian democracy in several aspects, including the confidentiality of the source, such as the attempt to coerce the delivery of sources in the case of the press editorial Vaza Jato. 
  
