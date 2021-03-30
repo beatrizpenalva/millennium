@@ -3,7 +3,7 @@ An app for journalists and their informants exchange messages encoded by the Cae
 
 ![WebbApp](src/img/vd_readme_app.gif)
 
-## Índice
+## Index
 
 * [About](#about)
 * [User Experience](#user-experience)
