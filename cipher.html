@@ -12,28 +12,37 @@
   <link rel="shortcut icon" href="./img/img_message.svg/" />
 </head>
 
-<body class="home-container">
+<body class="cipher-container">
+  <header>
+    <button>
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    MILLENNIUM
+  </header>
+
   <main>
-    <article class="text">
-      <h1>MILLENNIUM</h1>
-      <p>
-        The Brazil Federal Constitution of 1988 institutes "access to information is guaranteed 
-        to all and confidentiality of the source is guaranteed, when necessary for professional practice".
-      </p>
+    <section class="col">
+      <label>Input:
+        <textarea maxlength="2000" class="text-message" id="message" placeholder="Type here" spellcheck="true"></textarea>
+      </label>
 
-      <p>
-        So, to help create a safe communication in digital environments, Millennium is an app for journalists and their 
-        informants exchange messages encoded by the Caesar Cipher method.
-      </p>  
-    </article>
+      <section class="buttons-container">
+        <button class="buttons" id="button-encode">ENCODE</button>
+        <button class="buttons" id="button-decode">DECODE</button>
+      </section>
+    </section>
 
-    <form>
-      <input autocomplete="false" type="number" min="1" max="9999" id="offset" placeholder="Type your key" required>
-      
-      <button class="buttons">
-        <a class="buttons" href="cipher.html">START</a>
-      </button> 
-    </form>
+    <section class="col">
+      <label>Output:
+        <textarea class="text-message" id="final-message" placeholder="Message result" readonly></textarea>
+      </label>
+
+      <section class="buttons-container">
+        <button class="buttons" id="button-copy">COPY</button>
+        <button class="buttons" id="button-clean">CLEAR</button>
+      </section>
+    </section>
   </main>
 
   <footer>
@@ -43,7 +52,6 @@
     | Find me on
     <a href="https://www.linkedin.com/in/beatrizpenalva/" target="blank" title="LINKEDIN PROFILE">Linkedin</a>
   </footer>
-
   <script src="index.js" type="module"></script>
 </body>
 </html>
