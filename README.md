@@ -17,34 +17,29 @@
 
 ## 🎯 Challenge
 
-&nbsp;
 Develop in two weeks an app to encode and decode messages by the Ceaser Cipher method, using only vanilla JavaScript, HTML5 and CSS3. First project developed in [Laboratoria](https://www.laboratoria.la/) Bootcamp.
 
 <p align="center">
   <img src"https://media2.giphy.com/media/akJVKZazCModGK2gsE/giphy.gif"></img>
+  <img src="https://i.giphy.com/media/akJVKZazCModGK2gsE/giphy.webp"></img>
 </p>
 
 ---
 
 ## ✉️ About
 
-&nbsp;
 The Brazil Federal [Constitution](http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm) of 1988 in its Art. 5th, item XIV, institutes "access to information is guaranteed to all and confidentiality of the source is guaranteed, when necessary for professional practice". However, recent episodes of national policy exposed the fragility of the youth Brazilian democracy in several aspects, including the confidentiality of the source, such as the attempt to coerce the delivery of sources in the case of the press editorial [Vaza Jato](https://theintercept.com/series/mensagens-lava-jato/). 
  
-&nbsp; 
 So, a group of Brazilian Journalists hired the famous Scottish investigative journalist Mikael Blomkvist, co-founder and chief-editor at [Millennium](https://pt.wikipedia.org/wiki/S%C3%A9rie_Millennium) magazine, to develop a solution that helps to create safe communication in digital environments between journalists and their informants. 
 
 ---
 
-## 💻 Development
+## 💡 User Experience
 
-### 💡 User Experience
-
-&nbsp; 
 The User Experience was focused on being an intuitive and practical tool, in that way, the user will spend the minimum time using the product. 
 How to use the app step by step:
  
- #### ⚙️ Features
+ #### ⚙️💻 Features
 * Create or type your security key
 * Type the message
 * Click the button  to encode or to decode (as long the message was coded by the Caesar Cipher method it will work) 
@@ -56,7 +51,7 @@ How to use the app step by step:
     <img src="src/img/vd_readme_app.gif"></img>
 </p>
 
-### 🎨 User interface
+## 🎨 User interface
 
 The User Interface's aesthetic was inspired by the true protagonist of the Millennium trilogy, the hacker Wasp, also known as Lisbeth Salander. Therefore, the color palette was based on Salander's style and the background image in her profession.
 
@@ -97,20 +92,20 @@ The User Interface's aesthetic was inspired by the true protagonist of the Mille
 
 ---
 
-## 🛠 Build With
+## 💻 Build With
 
 &nbsp;
-👉 JavaScript (ES6)
+🛠 JavaScript (ES6)
 
 &nbsp;
-👉 HTML5
+🛠 HTML5
 
 &nbsp;
-👉 CSS3
+🛠 CSS3
 
 ---
 
 ## 🦸 Author
 
 &nbsp;
-Developed with ❤️ by [Beatriz Penalva](https://github.com/beatrizpenalva)
+Developed with ❤️ by [Beatriz Penalva](https://github.com/beatrizpenalva) 👋
