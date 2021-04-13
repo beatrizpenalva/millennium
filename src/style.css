@@ -1,89 +1,248 @@
+/* RESET */
+
 *{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
-body{
-    color: rgb(219, 215, 219);
-    font-size: 20pt;
-    display: block;
-    background-color:#0D0D0D;
+
+html, body, div, span, a,  label, 
+h1, h2, h3, h4, h5, h6, p, 
+article, footer, header, section {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-header{
-    justify-content: center;
-    box-sizing: border-box; 
-    height: 15vh;
-    color: rgb(219, 215, 219);
-    background-color:#0D0D0D;
-    font-size: 28pt;
-    text-align: center;
-    padding: 4.5vh;
-    display: flex;
+
+article, footer, header, section {
+	display: block;
 }
-main{
-    display: flex;
-    justify-content: space-around;
-    height: 80vh;
-    background-image: url(./img/img_hacker_mind.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
+
+body {
+	line-height: 1;
 }
-.rightSide, .leftSide{
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/* VARIABLES*/
+
+body {
+    --title-txt: normal 2.4em "Staatliches";
+    --subtitle-txt: normal 1.4em "Oswald", sans-serif;
+    --main-txt: lighter 1.2em "Oswald", sans-serif;
+    --btn-txt: normal 1.0em "Oswald", sans-serif;
+    --primary-color: #6A63FE;
+    --secondary-color: #2F2E40;
+    --secondary-color-variant: #8985A8;
+    --main-txt-color: #F2F2F3;
+    --bg-color: #403E56;
+    --btn-bg-color: var(--primary-color);
+    --btn-bg-color-hv: var(--secondary-color-variant);
+    --btn-txt-color: var(--main-txt-color);
+    --btn-txt-color-hv: var(--secondary-color);
+    --btn-border: 10px;
+}
+
+/* GLOBAL STYLING */
+body {
     display: flex;
     flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+label {
+    font: var(--subtitle-txt);
+    color: var(--main-txt-color);
+}
+
+
+footer {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--secondary-color-variant);
+    color: var(--main-txt-color);
+    font: var(--main-txt);
 }
-.textArea{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+
+footer a {
+    margin: 0 5px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    transition: all .5s ease-out;
 }
-.buttonArea{
-    display: flex;
-    justify-content: space-between;
-    padding: 1vh;
+
+.fa-github-alt {
+    margin-right: 10px;
 }
-.textMessage{
-    width: 400px;
-    background-color: #0D0D0D;
-    color: #D9D9D9;
-    opacity: .95; 
-    overflow: auto;
+
+a:hover {
+    color: var(--primary-color);
 }
-#textResult{
-    height: 50vh;
-}    
-#offset{
-    height: 5vh;
-}    
-#textToEncode{
-    height: 45vh;
-}    
-.button{ 
-    box-sizing: border-box; 
+
+.buttons {
+    width: 100%;
     height: 40px;
-    width: 120px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #D9D9D9;
-    background-color:#0D0D0D;
-    justify-content: center;
-    color: #5A56BF;
-    font-size: normal 16pt;
-    opacity: .95;
+    background-color: var(--btn-bg-color);
+    border-radius: var(--btn-border);
+    font: var(--btn-txt);
+    color: var(--btn-txt-color);
+    transition: all .5s ease-out;
 }
-#restart, #copyText{
-    width: 180px;
+
+.buttons a {
+    border: none;
+    background-color: transparent;
 }
-footer{
-    box-sizing: border-box; 
-    height: 3vh;
-    padding: 1vh;
+
+.buttons:hover {
+    color: var(--btn-txt-color-hv);
+    background-color: var(--btn-bg-color-hv);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: var(--secondary-color);
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.1); 
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px var(--secondary-color);
+}
+
+/* HOME PAGE */
+
+.home-container {
+    background: transparent url(./img/hacker.png) no-repeat fixed 100%;
+    background-size: cover;
+    text-align: left;
+}
+
+.home-container main {
+    max-width: 350px;
+    margin-left: 5%;
+    padding: 2%;
+    background-color: var(--bg-color);
+}
+
+.home-container article {
+    text-align: left;
+    color: var(--main-txt-color);
+    font: var(--main-txt);
+    line-height: 1.5;
+}
+
+.home-container p {
+    margin: 5% 0;
+}
+
+.home-container h1, header {
     text-align: center;
-    background-color:#0D0D0D;
-    color:#D9D9D9;
-    font-size: 8pt;
+    font: var(--title-txt);
+    color: var(--main-txt-color);
 }
-a{
-    color: #D9D9D9;
+
+.home-container input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10%;
+    padding: 2%;
+    font: var(--btn-txt);
+    color: var(--main-txt-color);
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--btn-bg-color);
+    outline: none;
+    resize: none;
+}
+
+.home-container input:focus {
+    background-color: var(--secondary-color-variant);
+}
+
+/* CIPHER PAGE */
+
+.cipher-container {
+    background-color: var(--bg-color);
+    margin-top: 2%;
+}
+
+.cipher-container main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+
+.fa-chevron-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    font-size: 50px;
+    color: var(--primary-color);
+    transition: all .5s ease-out;
+}
+
+.fa-chevron-left:hover {
+    color: var(--main-txt-color);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 0;
+}
+
+.buttons-container button {
+    margin: 0 2%;
+}
+
+.text-message {
+    width: 100%;
+    height: 50vh;
+    margin-top: 5%;
+    padding: 2%;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #5A56BF;
+    outline: none;
+    overflow: auto;
+    font: var(--main-txt);
+    color: var(--main-txt-color);
+    background-color: transparent;
+}
+
+.text-message:focus {
+    background-color: var(--secondary-color-variant);
 }
