@@ -1,33 +1,45 @@
-## Millennium
-An app for journalists and their informants exchange messages encoded by the Caesar Cipher method 
+# Millennium
 
-![WebbApp](src/img/vd_readme_app.gif)
+<p align="center">
+  🌟 An app for journalists and their informants exchange messages encoded by the Caesar Cipher method . To access click <a href='https://beatrizpenalva.github.io/millennium/'>here</a>! 🌟 
+</p>
 
-## Index
+<p align="center">
+ <a href="#challenge">Challenge</a> •
+ <a href="#about">About</a> •
+ <a href="#user-experience">User Experience</a> • 
+ <a href="#user-interface">User Interface</a> • 
+ <a href="#acknowledgments-and-credits">Acknowledgments and credits</a> • 
+ <a href="#author">Author</a>
+</p>
 
-* [About](#about)
-* [User Experience](#user-experience)
-* [User Interface](#user-interface)
-* [Build With](#build-with)
-* [Acknowledgments](#acknowledgments)
-* [Author](#author)
+---
 
-***
+## 🎯 Challenge
 
-## About
+Develop in two weeks an app to encode and decode messages by the Ceaser Cipher method, using only vanilla JavaScript, HTML5 and CSS3. First project developed in [Laboratoria](https://www.laboratoria.la/) Bootcamp.
 
-The Brazil Federal [Constitution](http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm) of 1988 in its Art. 5th, item XIV, institutes "access to information is guaranteed to all and confidentiality of the source is guaranteed, when necessary for professional practice". 
+<p align="center">
+  <img src"https://media2.giphy.com/media/akJVKZazCModGK2gsE/giphy.gif"></img>
+  <img src="https://i.giphy.com/media/akJVKZazCModGK2gsE/giphy.webp"></img>
+</p>
 
-However, recent episodes of national policy exposed the fragility of the youth Brazilian democracy in several aspects, including the confidentiality of the source, such as the attempt to coerce the delivery of sources in the case of the press editorial Vaza Jato. 
+---
+
+## ✉️ About
+
+The Brazil Federal [Constitution](http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm) of 1988 in its Art. 5th, item XIV, institutes "access to information is guaranteed to all and confidentiality of the source is guaranteed, when necessary for professional practice". However, recent episodes of national policy exposed the fragility of the youth Brazilian democracy in several aspects, including the confidentiality of the source, such as the attempt to coerce the delivery of sources in the case of the press editorial [Vaza Jato](https://theintercept.com/series/mensagens-lava-jato/). 
  
-So, a group of Brazilian Journalists hired the famous Scottish investigative journalist Mikael Blomkvist, co-founder and chief-editor at Millennium magazine, to develop a solution that helps to create safe communication in digital environments between journalists and their informants. 
+So, a group of Brazilian Journalists hired the famous Scottish investigative journalist Mikael Blomkvist, co-founder and chief-editor at [Millennium](https://pt.wikipedia.org/wiki/S%C3%A9rie_Millennium) magazine, to develop a solution that helps to create safe communication in digital environments between journalists and their informants. 
 
+---
 
-## User Experience
+## 💡 User Experience
 
 The User Experience was focused on being an intuitive and practical tool, in that way, the user will spend the minimum time using the product. 
 How to use the app step by step:
  
+ #### ⚙️💻 Features
 * Create or type your security key
 * Type the message
 * Click the button  to encode or to decode (as long the message was coded by the Caesar Cipher method it will work) 
@@ -35,26 +47,65 @@ How to use the app step by step:
 * If you type anything wrong you can click on ‘clean’
 * If you want to start to code or decode a new message click on ‘start again’
 
-If you want to try it click [here](https://beatrizpenalva.github.io/Millennium/).
+<p align="center">
+    <img src="src/img/vd_readme_app.gif"></img>
+</p>
 
-### User Interface
+## 🎨 User interface
 
 The User Interface's aesthetic was inspired by the true protagonist of the Millennium trilogy, the hacker Wasp, also known as Lisbeth Salander. Therefore, the color palette was based on Salander's style and the background image in her profession.
 
+#### Low fidelity prototype
+
 ![Sketch](src/img/sketch.png)
 
-### Build With
+#### Credits
 
-* HTML5
-* CSS3
-* Vanilla JavaScript
+&nbsp;
+📌 Icons: [Font Awesome](https://fontawesome.com/)
 
-### Acknowledgments
+&nbsp;
+📌 Typography: [Oswald](https://fonts.google.com/specimen/Oswald?query=oswald), [Staatliches](https://fonts.google.com/specimen/Staatliches?query=Staatliches)
 
-* [Laboratoria](https://www.laboratoria.la/)
-* Inspired by the Millennium Trilogy, Stieg Larsson
-* Background Image by Katerina Limpitsouni - [unDraw](https://undraw.co/)
+&nbsp;
+📌 Background Image: Katerina Limpitsouni, [unDraw](https://undraw.co/)
 
-### Author
+### 🧪 Testing
+###🔎 Testing
+### 🚧Future implementations
 
-* Beatriz Penalva | [@beatrizpenalva](https://github.com/beatrizpenalva)
+&nbsp;
+📌 Responsividade
+
+&nbsp;
+📌 Acessibilidade
+
+&nbsp;
+📌 Sobre
+
+&nbsp;
+📌 Hacker edition
+
+---
+
+## 🚀 Getting Started
+
+---
+
+## 💻 Build With
+
+&nbsp;
+🛠 JavaScript (ES6)
+
+&nbsp;
+🛠 HTML5
+
+&nbsp;
+🛠 CSS3
+
+---
+
+## 🦸 Author
+
+&nbsp;
+Developed with ❤️ by [Beatriz Penalva](https://github.com/beatrizpenalva) 👋
