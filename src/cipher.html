@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Millennium</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Staatliches&display=swap');
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="./img/img_message.svg/" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Millennium</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Staatliches&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/img_message.svg/" />
+  </head>
 
-<body class="cipher-container">
-  <header>
-    <button>
-      <i class="fas fa-chevron-left"></i>
-    </button>
+    <body class="cipher-container">
+        <header>
+            <button id="return-page"><i class="fas fa-chevron-left"></i></button>
 
-    MILLENNIUM
-  </header>
+            MILLENNIUM
+        </header>
 
-  <main>
-    <section class="col">
-      <label>Input:
-        <textarea maxlength="2000" class="text-message" id="message" placeholder="Type here" spellcheck="true"></textarea>
-      </label>
+        <main>
+            <form class="col">
+                <input autocomplete="false" type="number" min="1" max="9999" id="offset" placeholder="Type your key" required>
+                <label>Input:
+                    <textarea maxlength="2000" class="text-message" id="message" placeholder="Type here" spellcheck="true" required></textarea>
+                </label>
 
-      <section class="buttons-container">
-        <button class="buttons" id="button-encode">ENCODE</button>
-        <button class="buttons" id="button-decode">DECODE</button>
-      </section>
-    </section>
+                <section class="buttons-container">
+                    <button class="buttons" id="button-encode">ENCODE</button>
 
-    <section class="col">
-      <label>Output:
-        <textarea class="text-message" id="final-message" placeholder="Message result" readonly></textarea>
-      </label>
+                    <button class="buttons" id="button-decode">DECODE</button>
+                </section>
+            </form>
 
-      <section class="buttons-container">
-        <button class="buttons" id="button-copy">COPY</button>
-        <button class="buttons" id="button-clean">CLEAR</button>
-      </section>
-    </section>
-  </main>
+            <section class="col">
+                <label>Output:
+                    <textarea class="text-message" id="final-message" placeholder="Message result" readonly></textarea>
+                </label>
 
-  <footer>
-    <i class="fab fa-github-alt"></i> 
-    Developed by
-    <a href="https://github.com/beatrizpenalva" target="blank" title="GITHUB PROFILE">Beatriz Penalva</a>
-    | Find me on
-    <a href="https://www.linkedin.com/in/beatrizpenalva/" target="blank" title="LINKEDIN PROFILE">Linkedin</a>
-  </footer>
-  <script src="index.js" type="module"></script>
-</body>
+                <section class="buttons-container">
+                    <button class="buttons" id="button-copy">COPY</button>
+                    
+                    <button class="buttons" id="button-clean">CLEAR</button>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <i class="fab fa-github-alt"></i> 
+            Developed by
+
+            <a href="https://github.com/beatrizpenalva" target="blank" title="GITHUB PROFILE">
+                Beatriz Penalva
+            </a>
+
+            | Find me on
+
+            <a href="https://www.linkedin.com/in/beatrizpenalva/" target="blank" title="LINKEDIN PROFILE">
+                Linkedin
+            </a>
+        </footer>
+        
+        <script src="index.js" type="module"></script>
+    </body>
 </html>

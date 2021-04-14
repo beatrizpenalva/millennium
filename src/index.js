@@ -1,49 +1,50 @@
-import cipher from "./cipher.js";
-const errorOffset = "Please, type a number."
-const errorText = "Please, type a text."
+import cipher from "../../cipher.js";
 
-function getOffset() {
-    const offset = Number(document.getElementById("offset").value);
-    if (offset !== 0 && offset !== null) {
-        return offset;
-    } else {
-        return console.log(errorOffset);
-    }
-}
-function getText() {
-    const messageToEncode = document.getElementById("message").value.toUpperCase();
-    if (messageToEncode !== "" && messageToEncode !== 0) {
-        return messageToEncode;
-    } else {
-        return console.log(errorText);
-    }
-}
+const encodeButton = document.querySelector("#button-encode");
+const decodeButton = document.querySelector("#button-decode");
+const copyButton = document.querySelector("#button-copy");
+const cleanButton = document.querySelector("#button-clean");
+const offsetNumber = document.querySelector("#offset");
+const initialMessage = document.querySelector("#message");
+const finalMessage = document.querySelector("#final-message");
 
-const offset = getOffset();
-const messageToEncode = getText();
+encodeButton.addEventListener("click", (e) => {
+  printMessageCoded(e);
+});
 
-document.getElementById("button-encode").addEventListener("click", printTextCoded);
-function printTextCoded() {
-    const encodedMessage = cipher.encode(offset, messageToEncode);
-    document.getElementById("final-message").innerText = encodedMessage;
-}
+decodeButton.addEventListener("click", (e) => {
+  printMessageDecoded(e);
+});
 
-document.getElementById("button-decode").addEventListener("click", getAndPrintTextDecoded);
-function getAndPrintTextDecoded() {
-    const decodedMessage = cipher.decode(offset, messageToEncode);
-    document.getElementById("final-message").innerText = decodedMessage;
+copyButton.addEventListener("click", copyFinalMessage);
+cleanButton.addEventListener("click", cleanFinalMessage);
+
+function printMessageCoded(e) {
+  e.preventDefault();
+  const encodedMessage = cipher.encode(
+    Number(offsetNumber.value),
+    initialMessage.value.toUpperCase()
+  );
+  document.querySelector("#final-message").innerText = encodedMessage;
 }
 
-document.getElementById("button-copy").addEventListener("click", copyTextResult);
-function copyTextResult() {
-    document.getElementById("final-message").select();
-    document.execCommand("copy");
-    document.getElementById("button-copy").innerHTML = "COPIED";
+function printMessageDecoded(e) {
+  e.preventDefault();
+  const decodedMessage = cipher.decode(
+    Number(offsetNumber.value),
+    initialMessage.value.toUpperCase()
+  );
+  document.querySelector("#final-message").innerText = decodedMessage;
 }
 
-document.getElementById("button-clean").addEventListener("click", cleanText);
-function cleanText() {
-    document.getElementById("message").value = "";
-    document.getElementById("offset").value = "";
-    document.getElementById("final-message").innerHTML = "";
+function copyFinalMessage() {
+  finalMessage.select();
+  document.execCommand("#copy");
+  document.querySelector("#button-copy").innerHTML = "COPIED";
+}
+
+function cleanFinalMessage() {
+  document.querySelector("#message").value = "";
+  document.querySelector("#offset").value = "";
+  document.querySelector("#final-message").innerHTML = "";
 }
