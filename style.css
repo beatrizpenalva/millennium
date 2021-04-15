@@ -292,6 +292,15 @@ header {
 @media (max-width: 414px) {
   .home-container main {
     width: 100%;
-    /* padding: 5% 10%; */
+    padding: 0 10px;
   }
+
+  footer {
+    padding: 10px;
+  }
+
+  .home-container p {
+    font: var(--btn-txt);
+  }
+  
 }
