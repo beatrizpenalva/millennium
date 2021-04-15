@@ -14,36 +14,43 @@
 
     <body class="cipher-container">
         <header>
-            <button id="return-page"><i class="fas fa-chevron-left"></i></button>
+            <button id="return-page">
+                <a href="index.html">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+              </button> 
 
             MILLENNIUM
         </header>
 
         <main>
-            <form class="col">
-                <input autocomplete="false" type="number" min="1" max="9999" id="offset" placeholder="Type your key" required>
-                <label>Input:
-                    <textarea maxlength="2000" class="text-message" id="message" placeholder="Type here" spellcheck="true" required></textarea>
-                </label>
+            <input autocomplete="false" type="number" min="1" max="9999" id="offset" placeholder="Type your key" required>
 
-                <section class="buttons-container">
-                    <button class="buttons" id="button-encode">ENCODE</button>
+            <section class="texts-container">
+                <section class="col">
+                    <label>Input:
+                        <textarea maxlength="2000" class="text-message" id="message" placeholder="Type here" spellcheck="true" required></textarea>
+                    </label>
 
-                    <button class="buttons" id="button-decode">DECODE</button>
+                    <section class="buttons-container">
+                        <button class="buttons" id="button-encode">ENCODE</button>
+
+                        <button class="buttons" id="button-decode">DECODE</button>
+                    </section>
                 </section>
-            </form>
 
-            <section class="col">
-                <label>Output:
-                    <textarea class="text-message" id="final-message" placeholder="Message result" readonly></textarea>
-                </label>
+                <section class="col">
+                    <label>Output:
+                        <textarea class="text-message" id="final-message" placeholder="Message result" readonly></textarea>
+                    </label>
 
-                <section class="buttons-container">
-                    <button class="buttons" id="button-copy">COPY</button>
-                    
-                    <button class="buttons" id="button-clean">CLEAR</button>
+                    <section class="buttons-container">
+                        <button class="buttons" id="button-copy">COPY</button>
+                        
+                        <button class="buttons" id="button-clean">CLEAR</button>
+                    </section>
                 </section>
-            </section>
+            </section>    
         </main>
 
         <footer>
