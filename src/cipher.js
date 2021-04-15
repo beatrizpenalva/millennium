@@ -37,3 +37,16 @@ const cipher = {
   }
 };
 export default cipher;
+
+useEffect(() => {
+  setTotal(() => {
+      const newTotal = allResponses.reduce((accumulator, current) => {
+          // const { quantity, price } = current;
+          accumulator = current + 
+          Number(quantity * price + accumulator);
+          return accumulator;
+      }, 0);
+
+      return newTotal;
+  });
+}, [allResponses]);
