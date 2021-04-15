@@ -1,248 +1,297 @@
-/* RESET */
+RESET
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-html, body, div, span, a,  label, 
-h1, h2, h3, h4, h5, h6, p, 
-article, footer, header, section {
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+a,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+article,
+footer,
+header,
+section {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-article, footer, header, section {
-	display: block;
+article,
+footer,
+header,
+section {
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1.3;
 }
 
 button {
-    border: none;
-    outline: none;
-    background-color: transparent;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* VARIABLES*/
 
 body {
-    --title-txt: normal 2.4em "Staatliches";
-    --subtitle-txt: normal 1.4em "Oswald", sans-serif;
-    --main-txt: lighter 1.2em "Oswald", sans-serif;
-    --btn-txt: normal 1.0em "Oswald", sans-serif;
-    --primary-color: #6A63FE;
-    --secondary-color: #2F2E40;
-    --secondary-color-variant: #8985A8;
-    --main-txt-color: #F2F2F3;
-    --bg-color: #403E56;
-    --btn-bg-color: var(--primary-color);
-    --btn-bg-color-hv: var(--secondary-color-variant);
-    --btn-txt-color: var(--main-txt-color);
-    --btn-txt-color-hv: var(--secondary-color);
-    --btn-border: 10px;
+  --title-txt: normal 2.8rem "Staatliches";
+  --subtitle-txt: normal 2rem "Oswald", sans-serif;
+  --main-txt: lighter 1.5rem "Oswald", sans-serif;
+  --btn-txt: normal 1.25rem "Oswald", sans-serif;
+  --primary-color: #6a63fe;
+  --secondary-color: #2f2e40;
+  --secondary-color-variant: #8985a8;
+  --main-txt-color: #f2f2f3;
+  --bg-color: #403e56;
+  --btn-bg-color: var(--primary-color);
+  --btn-bg-color-hv: var(--secondary-color-variant);
+  --btn-txt-color: var(--main-txt-color);
+  --btn-txt-color-hv: var(--secondary-color);
+  --btn-border: 10px;
 }
 
 /* GLOBAL STYLING */
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 label {
-    font: var(--subtitle-txt);
-    color: var(--main-txt-color);
+  font: var(--subtitle-txt);
+  color: var(--main-txt-color);
 }
 
-
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: var(--secondary-color-variant);
-    color: var(--main-txt-color);
-    font: var(--main-txt);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--secondary-color-variant);
+  color: var(--main-txt-color);
+  font: var(--btn-txt);
 }
 
 footer a {
-    margin: 0 5px;
-    font-weight: 400;
-    color: var(--secondary-color);
-    transition: all .5s ease-out;
+  margin: 0 5px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  transition: all 0.5s ease-out;
 }
 
 .fa-github-alt {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .buttons {
-    width: 100%;
-    height: 40px;
-    background-color: var(--btn-bg-color);
-    border-radius: var(--btn-border);
-    font: var(--btn-txt);
-    color: var(--btn-txt-color);
-    transition: all .5s ease-out;
+  width: 100%;
+  height: 40px;
+  background-color: var(--btn-bg-color);
+  border-radius: var(--btn-border);
+  font: var(--btn-txt);
+  color: var(--btn-txt-color);
+  transition: all 0.5s ease-out;
 }
 
 .buttons a {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
+  color: var(--btn-txt-color);
 }
 
 .buttons:hover {
-    color: var(--btn-txt-color-hv);
-    background-color: var(--btn-bg-color-hv);
+  color: var(--btn-txt-color-hv);
+  background-color: var(--btn-bg-color-hv);
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    background: var(--secondary-color);
-    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.1); 
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: var(--secondary-color);
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 2px var(--secondary-color);
+  box-shadow: inset 0 0 2px var(--secondary-color);
 }
 
 /* HOME PAGE */
 
 .home-container {
-    background: transparent url(./img/hacker.png) no-repeat fixed 100%;
-    background-size: cover;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
+  background: transparent url(./img/hacker.png) no-repeat fixed 25% 75%;
+  background-size: cover;
 }
 
 .home-container main {
-    max-width: 350px;
-    margin-left: 5%;
-    padding: 2%;
-    background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 40%;
+  padding: 5%;
+  background-color: var(--bg-color);
 }
 
 .home-container article {
-    text-align: left;
-    color: var(--main-txt-color);
-    font: var(--main-txt);
-    line-height: 1.5;
+  text-align: center;
+  color: var(--main-txt-color);
+  font: var(--main-txt);
 }
 
 .home-container p {
-    margin: 5% 0;
+  margin: 5% 0;
+  font: var(--main-txt);
 }
 
-.home-container h1, header {
-    text-align: center;
-    font: var(--title-txt);
-    color: var(--main-txt-color);
+.home-container h1,
+header {
+  text-align: center;
+  font: var(--title-txt);
+  color: var(--main-txt-color);
 }
 
 /* CIPHER PAGE */
 
 .cipher-container {
-    background-color: var(--bg-color);
-    margin-top: 2%;
+  background-color: var(--bg-color);
+  margin-top: 2%;
+}
+
+header {
+  height: 60px;
 }
 
 .cipher-container main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 30%;
+  min-height: calc(100vh - 120px);
+}
+
+.texts-container {
+  display: flex;
+  flex: 1;
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
-    margin: 3%;
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
 }
 
 .fa-chevron-left {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 20px;
-    font-size: 50px;
-    color: var(--primary-color);
-    transition: all .5s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  font-size: 50px;
+  color: var(--primary-color);
+  transition: all 0.5s ease-out;
 }
 
 .fa-chevron-left:hover {
-    color: var(--main-txt-color);
+  color: var(--main-txt-color);
 }
 
 .buttons-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5% 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% 0;
 }
 
 .buttons-container button {
-    margin: 0 2%;
+  margin: 0 2%;
 }
 
 .text-message {
-    width: 100%;
-    height: 50vh;
-    margin-top: 5%;
-    padding: 2%;
-    resize: none;
-    border: none;
-    border-bottom: 2px solid #5A56BF;
-    outline: none;
-    overflow: auto;
-    font: var(--main-txt);
-    color: var(--main-txt-color);
-    background-color: transparent;
+  width: 100%;
+  height: calc(100vh - 360px);
+  padding: 2%;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid #5a56bf;
+  outline: none;
+  overflow: auto;
+  font: var(--main-txt);
+  color: var(--main-txt-color);
+  background-color: transparent;
 }
 
 .text-message:focus {
-    background-color: var(--secondary-color-variant);
+  background-color: var(--secondary-color-variant);
 }
 
 .cipher-container input {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 10%;
-    padding: 2%;
-    font: var(--btn-txt);
-    color: var(--main-txt-color);
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid var(--btn-bg-color);
-    outline: none;
-    resize: none;
+  width: 100%;
+  padding: 10px;
+  font: var(--btn-txt);
+  color: var(--main-txt-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--btn-bg-color);
+  outline: none;
+  resize: none;
 }
 
 .cipher-container input:focus {
-    background-color: var(--secondary-color-variant);
+  background-color: var(--secondary-color-variant);
+}
+
+@media (max-width: 414px) {
+  .home-container main {
+    width: 100%;
+    /* padding: 5% 10%; */
+  }
 }
