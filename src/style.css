@@ -274,7 +274,7 @@ header {
   height: calc(100vh - 420px);
   width: 32vw;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   resize: none;
   border: none;
   border-bottom: 2px solid #5a56bf;
@@ -347,12 +347,14 @@ header {
 
   .cipher-container main {
     padding: 0 10%;
+    justify-content: start;
   }
 
-  .text-container {
+  .texts-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: unset;
   }
 
   .col {
@@ -366,14 +368,15 @@ header {
 
   .text-message {
     width: 80vw;
-    height: calc(50vh - 180px);
+    height: calc(50vh - 215px);
   }
 
-  footer {
-    position: relative;
+  .col label {
+    font: var(--main-txt);
   }
 
   .fa-chevron-left {
     font-size: 35px;
   }
 }
+
