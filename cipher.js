@@ -1,20 +1,31 @@
 const cipher = {
-  translate(offset, message, method) {
+  encrypt(offset, message, method) {
     const messageToEncode = Array.from(message);
     const offsetNumber = offset;
     const alphabetLength = 26;
-    const letterACodeASCII = "A".charCodeAt();
+    const aCodeUpperCase = "A".charCodeAt();
+    const zCodeUpperCase = "Z".charCodeAt();
+    const aCodeLowerCase = "a".charCodeAt();
+    const zCodeLowerCase = "z".charCodeAt();
     let finalMessage = "";
+
     if (!offsetNumber || !messageToEncode)
       throw new TypeError("invalid offset or string");
     else {
       messageToEncode.map((item) => {
         const codeASCII = item.charCodeAt();
-        if (64 < codeASCII && codeASCII < 91) {
+        if (
+          (aCodeUpperCase <= codeASCII && codeASCII <= zCodeUpperCase) ||
+          (aCodeLowerCase <= codeASCII && codeASCII <= zCodeLowerCase)
+        ) {
+          const isLowerOrUpper =
+            aCodeUpperCase <= codeASCII && codeASCII <= zCodeUpperCase
+              ? aCodeUpperCase
+              : aCodeLowerCase;
           if (method === "encode") {
             const letterEncoded = cipher.encode(
               codeASCII,
-              letterACodeASCII,
+              isLowerOrUpper,
               offsetNumber,
               alphabetLength
             );
@@ -23,7 +34,7 @@ const cipher = {
           if (method === "decode") {
             const letterDecoded = cipher.decode(
               codeASCII,
-              letterACodeASCII,
+              isLowerOrUpper,
               offsetNumber,
               alphabetLength
             );
