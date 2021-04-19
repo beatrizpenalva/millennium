@@ -21,25 +21,27 @@ cleanButton.addEventListener("click", cleanFinalMessage);
 
 function printMessageCoded(e) {
   e.preventDefault();
-  const encodedMessage = cipher.encode(
+  const encodedMessage = cipher.translate(
     Number(offsetNumber.value),
-    initialMessage.value.toUpperCase()
+    initialMessage.value.toUpperCase(),
+    "encode"
   );
   document.querySelector("#final-message").innerText = encodedMessage;
 }
 
 function printMessageDecoded(e) {
   e.preventDefault();
-  const decodedMessage = cipher.decode(
+  const decodedMessage = cipher.translate(
     Number(offsetNumber.value),
-    initialMessage.value.toUpperCase()
+    initialMessage.value.toUpperCase(),
+    "decode"
   );
   document.querySelector("#final-message").innerText = decodedMessage;
 }
 
 function copyFinalMessage() {
   finalMessage.select();
-  document.execCommand("#copy");
+  document.execCommand("copy");
   document.querySelector("#button-copy").innerHTML = "COPIED";
 }
 
