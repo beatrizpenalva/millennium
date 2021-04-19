@@ -1,8 +1,6 @@
 import cipher from "../../cipher.js";
 
-const getEncryptOptions = document.getElementsByName("method")[0].checked
-  ? "encode"
-  : "decode";
+const getEncryptOptions = document.getElementsByName("method");
 const offsetNumber = document.querySelector("#offset");
 const initialMessage = document.querySelector("#message");
 const finalMessage = document.querySelector("#final-message");
@@ -10,19 +8,19 @@ const copyButton = document.querySelector("#button-copy");
 const cleanButton = document.querySelector("#button-clean");
 const countCaracteres = document.querySelector("#count-caracteres");
 
+copyButton.addEventListener("click", copyFinalMessage);
+cleanButton.addEventListener("click", cleanFinalMessage);
 initialMessage.addEventListener("input", (e) => {
   e.preventDefault();
   countCaracteres.innerText = initialMessage.value.length;
   encryptMessage();
 });
-copyButton.addEventListener("click", copyFinalMessage);
-cleanButton.addEventListener("click", cleanFinalMessage);
 
 function encryptMessage() {
-  const messageEncrypted = cipher.translate(
-    Number(offsetNumber.value),
-    initialMessage.value.toUpperCase(),
-    getEncryptOptions
+  const messageEncrypted = cipher.encrypt(
+    Math.abs(Number(offsetNumber.value)),
+    initialMessage.value,
+    getEncryptOptions[0].checked ? "encode" : "decode"
   );
   printMessage(messageEncrypted);
 }
