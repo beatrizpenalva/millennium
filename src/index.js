@@ -8,9 +8,11 @@ const initialMessage = document.querySelector("#message");
 const finalMessage = document.querySelector("#final-message");
 const copyButton = document.querySelector("#button-copy");
 const cleanButton = document.querySelector("#button-clean");
+const countCaracteres = document.querySelector("#count-caracteres");
 
 initialMessage.addEventListener("input", (e) => {
   e.preventDefault();
+  countCaracteres.innerText = initialMessage.value.length;
   encryptMessage();
 });
 copyButton.addEventListener("click", copyFinalMessage);

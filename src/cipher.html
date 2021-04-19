@@ -27,7 +27,7 @@
 
         <main>
             <label class="row-input">Secret key:
-                <input autocomplete="false" type="number" min="1" max="9999" id="offset" placeholder="Type a number" required>
+                <input autocomplete="false" type="number" min="1" max="9999" id="offset" placeholder="Type a number from 1 to 9999" required>
             </label>
 
             <section class="texts-container">
@@ -35,11 +35,21 @@
                     <label>Input:
                         <textarea maxlength="2000" class="text-message" id="message" placeholder="Type your message here" spellcheck="true" required></textarea>
                     </label>
+                    <p><span id="count-caracteres">0</span>/2000</p>
 
                     <section class="buttons-container">
-                        <button class="buttons" id="button-encode">ENCODE</button>
+                        <label>
+                            ENCODE
+                            <input type="radio" name="method" value="encode" id="encode" checked>
+                        </label>
 
-                        <button class="buttons" id="button-decode">DECODE</button>
+                        <label>
+                            DECODE
+                            <input type="radio" name="method" value="decode" id="decode">
+                        </label>
+<!-- 
+                        <button class="buttons" id="button-encode">ENCODE</button>
+                        <button class="buttons" id="button-decode">DECODE</button> -->
                     </section>
                 </section>
 
