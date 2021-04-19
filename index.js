@@ -1,42 +1,32 @@
 import cipher from "../../cipher.js";
 
-const encodeButton = document.querySelector("#button-encode");
-const decodeButton = document.querySelector("#button-decode");
-const copyButton = document.querySelector("#button-copy");
-const cleanButton = document.querySelector("#button-clean");
+const getEncryptOptions = document.getElementsByName("method")[0].checked
+  ? "encode"
+  : "decode";
 const offsetNumber = document.querySelector("#offset");
 const initialMessage = document.querySelector("#message");
 const finalMessage = document.querySelector("#final-message");
+const copyButton = document.querySelector("#button-copy");
+const cleanButton = document.querySelector("#button-clean");
 
-encodeButton.addEventListener("click", (e) => {
-  printMessageCoded(e);
+initialMessage.addEventListener("input", (e) => {
+  e.preventDefault();
+  encryptMessage();
 });
-
-decodeButton.addEventListener("click", (e) => {
-  printMessageDecoded(e);
-});
-
 copyButton.addEventListener("click", copyFinalMessage);
 cleanButton.addEventListener("click", cleanFinalMessage);
 
-function printMessageCoded(e) {
-  e.preventDefault();
-  const encodedMessage = cipher.translate(
+function encryptMessage() {
+  const messageEncrypted = cipher.translate(
     Number(offsetNumber.value),
     initialMessage.value.toUpperCase(),
-    "encode"
+    getEncryptOptions
   );
-  document.querySelector("#final-message").innerText = encodedMessage;
+  printMessage(messageEncrypted);
 }
 
-function printMessageDecoded(e) {
-  e.preventDefault();
-  const decodedMessage = cipher.translate(
-    Number(offsetNumber.value),
-    initialMessage.value.toUpperCase(),
-    "decode"
-  );
-  document.querySelector("#final-message").innerText = decodedMessage;
+function printMessage(messageEncrypted) {
+  document.querySelector("#final-message").innerText = messageEncrypted;
 }
 
 function copyFinalMessage() {
