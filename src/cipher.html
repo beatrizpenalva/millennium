@@ -26,12 +26,14 @@
         </header>
 
         <main>
-            <input autocomplete="false" type="number" min="1" max="9999" id="offset" placeholder="Type your key" required>
+            <label class="row-input">Secret key:
+                <input autocomplete="false" type="number" min="1" max="9999" id="offset" placeholder="Type a number" required>
+            </label>
 
             <section class="texts-container">
                 <section class="col">
                     <label>Input:
-                        <textarea maxlength="2000" class="text-message" id="message" placeholder="Type here" spellcheck="true" required></textarea>
+                        <textarea maxlength="2000" class="text-message" id="message" placeholder="Type your message here" spellcheck="true" required></textarea>
                     </label>
 
                     <section class="buttons-container">

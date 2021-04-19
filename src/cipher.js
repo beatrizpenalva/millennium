@@ -1,39 +1,57 @@
 const cipher = {
-  encode(offset, messageToEncode) {
-    const alphabetSize = 26;
+  translate(offset, message, method) {
+    const messageToEncode = Array.from(message);
+    const offsetNumber = offset;
+    const alphabetLength = 26;
+    const letterACodeASCII = "A".charCodeAt();
     let finalMessage = "";
-    if ((offset !== 0 && offset !== null) && (messageToEncode !== "" && messageToEncode !== 0)) {
-      for (let i = 0; i < messageToEncode.length; i++) {
-        const codeASCII = messageToEncode.charCodeAt(i)
+    if (!offsetNumber || !messageToEncode)
+      throw new TypeError("invalid offset or string");
+    else {
+      messageToEncode.map((item) => {
+        const codeASCII = item.charCodeAt();
         if (64 < codeASCII && codeASCII < 91) {
-          const cipher = (codeASCII - "A".charCodeAt() + offset) % alphabetSize + "A".charCodeAt();
-          finalMessage += String.fromCharCode(cipher);
+          if (method === "encode") {
+            const letterEncoded = cipher.encode(
+              codeASCII,
+              letterACodeASCII,
+              offsetNumber,
+              alphabetLength
+            );
+            return (finalMessage += String.fromCharCode(letterEncoded));
+          }
+          if (method === "decode") {
+            const letterDecoded = cipher.decode(
+              codeASCII,
+              letterACodeASCII,
+              offsetNumber,
+              alphabetLength
+            );
+            return (finalMessage += String.fromCharCode(letterDecoded));
+          }
         } else {
-          finalMessage += String.fromCharCode(codeASCII);
+          return (finalMessage += String.fromCharCode(codeASCII));
         }
-      }
+      });
       return finalMessage;
-    } else {
-      throw new TypeError ('invalid offset or string');
     }
   },
-  decode(offset, messageToEncode) {
-    const alphabetSize = 26;
-    let finalMessage = "";
-    if ((offset !== 0 && offset !== null) && (messageToEncode !== "" && messageToEncode !== 0)) {
-      for (let i = 0; i < messageToEncode.length; i++) {
-        const codeASCII = messageToEncode.charCodeAt(i)
-        if (64 < codeASCII && codeASCII < 91) {
-          const cipher = ((codeASCII - "A".charCodeAt() - (offset % alphabetSize) + alphabetSize) % alphabetSize + "A".charCodeAt());
-          finalMessage += String.fromCharCode(cipher);
-        } else {
-          finalMessage += String.fromCharCode(codeASCII);
-        }
-      }
-      return finalMessage;
-    } else {
-      throw new TypeError ('invalid offset or string');
-    }
-  }
+  decode(codeASCII, letterACodeASCII, offsetNumber, alphabetLength) {
+    return (
+      ((codeASCII -
+        letterACodeASCII -
+        (offsetNumber % alphabetLength) +
+        alphabetLength) %
+        alphabetLength) +
+      letterACodeASCII
+    );
+  },
+  encode(codeASCII, letterACodeASCII, offsetNumber, alphabetLength) {
+    return (
+      ((codeASCII - letterACodeASCII + offsetNumber) % alphabetLength) +
+      letterACodeASCII
+    );
+  },
 };
+
 export default cipher;
