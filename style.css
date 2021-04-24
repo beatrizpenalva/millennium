@@ -45,6 +45,7 @@ button {
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 h1 {
@@ -57,7 +58,7 @@ a {
 
 /* VARIABLES*/
 
-body {
+:root {
   --title-txt: normal 2.8rem "Staatliches";
   --subtitle-txt: normal 1.5rem "Oswald", sans-serif;
   --main-txt: lighter 1.25rem "Oswald", sans-serif;
@@ -116,13 +117,17 @@ footer a {
   margin-right: 10px;
 }
 
-a:hover {
+a:hover, a:active {
   color: var(--primary-color);
 }
 
-.buttons {
+.buttons, .buttons label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 40px;
+  margin: 0 10px;
   background-color: var(--btn-bg-color);
   border-radius: var(--btn-border);
   font: var(--btn-txt);
@@ -136,7 +141,7 @@ a:hover {
   color: var(--btn-txt-color);
 }
 
-.buttons:hover {
+.buttons:hover, .buttons:active {
   color: var(--btn-txt-color-hv);
   background-color: var(--btn-bg-color-hv);
 }
@@ -144,6 +149,15 @@ a:hover {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+
+input[type="radio"] {
+  display:none;
+}
+
+input:checked {
+  background-color: red;
+  color: red;
 }
 
 ::-webkit-scrollbar {
@@ -200,6 +214,26 @@ header {
   color: var(--main-txt-color);
 }
 
+.row-input {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.row-input input[type="number"] {
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  font: var(--btn-txt);
+  color: var(--main-txt-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--btn-bg-color);
+  outline: none;
+  resize: none;
+}
+
 /* CIPHER PAGE */
 
 .cipher-container {
@@ -240,6 +274,13 @@ header {
   max-height: 600px;
 }
 
+.count-caracteres {
+  display: flex;
+  align-items: center;
+  font: var(--btn-txt);
+  opacity: 75%;
+}
+
 .fa-chevron-left {
   position: fixed;
   top: 0;
@@ -250,7 +291,7 @@ header {
   transition: all 0.5s ease-out;
 }
 
-.fa-chevron-left:hover {
+.fa-chevron-left:hover, .fa-chevron-left:active {
   color: var(--main-txt-color);
 }
 
@@ -290,24 +331,8 @@ header {
   background-color: var(--secondary-color-variant);
 }
 
-.cipher-container input {
-  padding: 10px;
-  font: var(--btn-txt);
-  color: var(--main-txt-color);
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid var(--btn-bg-color);
-  outline: none;
-  resize: none;
-}
-
-.cipher-container input:focus {
+.cipher-container input:focus, .row-input input[type="number"]:focus {
   background-color: var(--secondary-color-variant);
-}
-
-.row-input {
-  display: flex;
-  width: 100%;
 }
 
 @media (max-width:768px) {
