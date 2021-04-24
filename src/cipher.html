@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Millennium</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Staatliches&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Staatliches&display=swap');
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./img/img_message.svg/" />
-  </head>
+</head>
 
-    <body class="cipher-container">
-        <header>
-            <button id="return-page">
-                <a href="index.html">
-                    <i class="fas fa-chevron-left"></i>
-                </a>
-              </button> 
+<body class="cipher-container">
+    <header>
+        <button id="return-page">
+            <a href="index.html">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </button>
 
-            MILLENNIUM
-        </header>
+        MILLENNIUM
+    </header>
 
-        <main>
-            <label class="row-input">Secret key:
-                <input autocomplete="false" type="number" min="-9999" max="9999" id="offset" placeholder="Type a number from 1 to 9999" required>
-            </label>
+    <main>
+        <section class="texts-container">
+            <section class="col">
+                <label>
+                    Input:
+                    <textarea maxlength="2000" class="text-message" id="message" placeholder="Type your message here"
+                        spellcheck="true" required></textarea>
+                </label>
 
-            <section class="texts-container">
-                <section class="col">
-                    <label>Input:
-                        <textarea maxlength="2000" class="text-message" id="message" placeholder="Type your message here" spellcheck="true" required></textarea>
-                    </label>
-                    <p><span id="count-caracteres">0</span>/2000</p>
-
-                    <section class="buttons-container">
-                        <label>
-                            ENCODE
-                            <input type="radio" name="method" value="encode" id="encode" checked>
-                        </label>
-
-                        <label>
-                            DECODE
-                            <input type="radio" name="method" value="decode" id="decode">
-                        </label>
-<!-- 
-                        <button class="buttons" id="button-encode">ENCODE</button>
-                        <button class="buttons" id="button-decode">DECODE</button> -->
-                    </section>
-                </section>
-
-                <section class="col">
-                    <label>Output:
-                        <textarea class="text-message" id="final-message" placeholder="Message result" readonly></textarea>
+                <section class="buttons-container">
+                    <label class="buttons">
+                        ENCODE
+                        <input type="radio" name="method" value="encode" id="encode" checked>
                     </label>
 
-                    <section class="buttons-container">
-                        <button class="buttons" id="button-copy">COPY</button>
-                        
-                        <button class="buttons" id="button-clean">CLEAR</button>
-                    </section>
+                    <label>
+                        DECODE
+                        <input type="radio" name="method" value="decode" id="decode">
+                    </label>
                 </section>
-            </section>    
-        </main>
+            </section>
 
-        <footer>
-            <i class="fab fa-github-alt"></i> 
-            Developed by
+            <section class="col">
+                <label>Output:
+                    <textarea class="text-message" id="final-message" placeholder="Message result" readonly></textarea>
+                </label>
 
-            <a href="https://github.com/beatrizpenalva" target="blank" title="GITHUB PROFILE">
-                Beatriz Penalva
-            </a>
+                <section class="buttons-container">
+                    <button class="buttons" id="button-copy">COPY</button>
 
-            | Find me on
+                    <button class="buttons" id="button-clean">CLEAR</button>
+                </section>
+            </section>
+        </section>
+    </main>
 
-            <a href="https://www.linkedin.com/in/beatrizpenalva/" target="blank" title="LINKEDIN PROFILE">
-                Linkedin
-            </a>
-        </footer>
-        
-        <script src="index.js" type="module"></script>
-    </body>
+    <footer>
+        <i class="fab fa-github-alt"></i>
+        Developed by
+
+        <a href="https://github.com/beatrizpenalva" target="blank" title="GITHUB PROFILE">
+            Beatriz Penalva
+        </a>
+
+        | Find me on
+
+        <a href="https://www.linkedin.com/in/beatrizpenalva/" target="blank" title="LINKEDIN PROFILE">
+            Linkedin
+        </a>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+</body>
+
 </html>
+
+<!-- <p class="count-caracteres">0/2000</p> -->
