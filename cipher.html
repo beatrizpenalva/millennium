@@ -29,11 +29,13 @@
     <main>
         <section class="texts-container">
             <section class="col">
-                <label>
+                <label for="message">
                     Input:
-                    <textarea maxlength="2000" class="text-message" id="message" placeholder="Type your message here"
-                        spellcheck="true" required></textarea>
+                    <p class="count-caracteres"><span id="count-caracteres"> 0 </span> /2000 </p>
                 </label>
+
+                <textarea maxlength="2000" class="text-message" id="message" placeholder="Type your message here"
+                    spellcheck="true"></textarea>
 
                 <section class="buttons-container">
                     <label class="buttons">
@@ -49,9 +51,8 @@
             </section>
 
             <section class="col">
-                <label>Output:
-                    <textarea class="text-message" id="final-message" placeholder="Message result" readonly></textarea>
-                </label>
+                <label for="final-message">Output:</label>
+                <textarea class="text-message" id="final-message" placeholder="Message result" readonly></textarea>
 
                 <section class="buttons-container">
                     <button class="buttons" id="button-copy">COPY</button>
@@ -81,5 +82,3 @@
 </body>
 
 </html>
-
-<!-- <p class="count-caracteres">0/2000</p> -->
