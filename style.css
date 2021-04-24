@@ -349,6 +349,35 @@ label {
   padding: 0 25px;
 }
 
+.radio-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: var(--btn-border);
+  border: 2px solid var(--btn-bg-color);
+  background-color: transparent;
+  font: var(--btn-txt);
+  color: var(--btn-txt-color);
+}
+
+label.radio-button {
+  padding: 0;
+}
+
+#encode:checked + span, #decode:checked + span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-radius: var(--btn-border);
+  border: 2px solid var(--btn-bg-color);
+  background-color: var(--btn-bg-color);
+}
+
 @media (max-width: 768px) {
   .home-container main {
     width: 60%;
