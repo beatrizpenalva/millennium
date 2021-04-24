@@ -117,11 +117,13 @@ footer a {
   margin-right: 10px;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: var(--primary-color);
 }
 
-.buttons, .buttons label {
+.buttons,
+.buttons label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +143,8 @@ a:hover, a:active {
   color: var(--btn-txt-color);
 }
 
-.buttons:hover, .buttons:active {
+.buttons:hover,
+.buttons:active {
   color: var(--btn-txt-color-hv);
   background-color: var(--btn-bg-color-hv);
 }
@@ -152,7 +155,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="radio"] {
-  display:none;
+  display: none;
 }
 
 input:checked {
@@ -270,15 +273,16 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 210px);
   max-height: 600px;
 }
 
 .count-caracteres {
   display: flex;
   align-items: center;
+  margin-left: auto;
   font: var(--btn-txt);
-  opacity: 75%;
+  opacity: 50%;
 }
 
 .fa-chevron-left {
@@ -291,7 +295,8 @@ header {
   transition: all 0.5s ease-out;
 }
 
-.fa-chevron-left:hover, .fa-chevron-left:active {
+.fa-chevron-left:hover,
+.fa-chevron-left:active {
   color: var(--main-txt-color);
 }
 
@@ -312,8 +317,8 @@ header {
 
 .text-message {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  height: calc(100vh - 480px);
   width: 32vw;
   padding: 10px;
   margin-bottom: 10px;
@@ -331,11 +336,20 @@ header {
   background-color: var(--secondary-color-variant);
 }
 
-.cipher-container input:focus, .row-input input[type="number"]:focus {
+.cipher-container input:focus,
+.row-input input[type="number"]:focus {
   background-color: var(--secondary-color-variant);
 }
 
-@media (max-width:768px) {
+label {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 0 25px;
+}
+
+@media (max-width: 768px) {
   .home-container main {
     width: 60%;
   }
@@ -343,7 +357,7 @@ header {
   .cipher-container input {
     width: 500px;
   }
-  
+
   .text-message {
     width: 500px;
     height: calc(50vh - 360px);
@@ -363,11 +377,11 @@ header {
 @media (max-width: 414px) {
   .home-container main {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   footer {
-    height: 80px;
+    height: 70px;
     padding: 10px;
   }
 
@@ -389,7 +403,6 @@ header {
 
   .col {
     margin: 10px 0 20px;
-    height: 100%;
   }
 
   .cipher-container input {
@@ -410,3 +423,8 @@ header {
   }
 }
 
+@media (max-width: 320px) {
+  .col {
+    margin: 5px 0 5px;
+  }
+}
