@@ -1,4 +1,4 @@
-<h1 align="center"> 📬 Millennium </h1>
+<h1 align="center" id="millennium"> 📬 Millennium </h1>
 
 <p align="center">
   ⚡ An app for journalists and their informants exchange messages encrypted by the Caesar Cipher method. To access click <a href='https://beatrizpenalva.github.io/millennium/'>here</a>! ⚡ 
@@ -20,11 +20,11 @@
 The proposal was to develop an app to encode and decode messages using the Ceaser Cipher method in two weeks, using only vanilla JavaScript, HTML5 and CSS3. The first project developed in [Laboratoria](https://www.laboratoria.la/) Bootcamp.
 
 <p align="center">
-  <img src"https://media2.giphy.com/media/akJVKZazCModGK2gsE/giphy.gif"></img>
+  <img src"https://media2.giphy.com/media/AWv3UAFkgz39u/giphy.gif"></img>
 </p>
 
-<p align='right'>
-  <a href='#-millennium'> Back to the top. </a>
+<p align="right">
+  <a href="#millennium"> Back to the top. </a>
 </p>
 
 ---
@@ -35,8 +35,8 @@ The Brazil Federal [Constitution](http://www.planalto.gov.br/ccivil_03/constitui
  
 So, a group of Brazilian Journalists hired the famous Scottish investigative journalist Mikael Blomkvist, co-founder and chief editor at [Millennium](https://pt.wikipedia.org/wiki/S%C3%A9rie_Millennium) magazine, to develop a solution that helps to create safe communication in digital environments between journalists and their informants. 
 
-<p align='right'>
-  <a href='#-millennium'> Back to the top. </a>
+<p align="right">
+  <a href="#millennium"> Back to the top. </a>
 </p>
 
 ---
@@ -61,13 +61,13 @@ You can see the app working in its old layout version:
     <img src="src/img/GIF_first-version.gif"></img>
 </p>
 
-<p align='right'>
-  <a href='#-millennium'> Back to the top. </a>
+<p align="right">
+  <a href="#millennium"> Back to the top. </a>
 </p>
 
 ### 🎨 User interface
 
-The User Interface's aesthetic was inspired by the true protagonist of the Millennium trilogy, the hacker Wasp, also known as Lisbeth Salander. Therefore, the color palette was based on Salander's style and the background image, designed by [Katerina Limpitsouni]((https://undraw.co/)), was chosen to make reference to her profession. To check if the colors used have good contrast for people with daltonism it was tested using the [Adobe Accessibility Tool](https://color.adobe.com/pt/create/color-accessibility).
+The User Interface's aesthetic was inspired by the true protagonist of the Millennium trilogy, the hacker Wasp, also known as Lisbeth Salander. Therefore, the color palette was based on Salander's style and the background image, designed by [Katerina Limpitsouni]((https://undraw.co/)), was chosen to make reference to her profession. To check if the colors used have good contrast for people with daltonism, the color palette was tested using the [Adobe Accessibility Tool](https://color.adobe.com/pt/create/color-accessibility).
  
 #### Background
 
@@ -76,9 +76,12 @@ The User Interface's aesthetic was inspired by the true protagonist of the Mille
 </p>
 
 #### Color palette
+
 <p align="center">
     <img src="src/img/color-palette.png"></img>
-    <br>
+</p>
+
+<p align="center">
     <img src="src/img/color-palette-dalto.png"></img>
 </p>
 
@@ -98,6 +101,7 @@ The app development started from a sketch that prioritized the input and output 
 
 <p align="center">
     <img src="src/img/doc_first-prototype.png" alt="Low fidelity desktop interface prototype"></img>
+    <br>
     🔎 Click on the image to enlarge 
 </p>
 
@@ -105,6 +109,7 @@ The app development started from a sketch that prioritized the input and output 
 
 <p align="center">
     <img src="src/img/doc_desktop_previous-layout.png" alt="First interface version"></img>
+    <br>
     🔎 Click on the image to enlarge
 </p>
 
@@ -112,9 +117,13 @@ The app development started from a sketch that prioritized the input and output 
 
 <p align="center">
     <img src="src/img/doc_desktop_home.png" alt="Desktop home page interface"></img>
-    🔎 Click on the image to enlarge 
     <br>
+    🔎 Click on the image to enlarge 
+</p>
+
+<p align="center">
     <img src="src/img/doc_desktop_cipher.png" alt="Desktop cipher page interface"></img>
+    <br>
     🔎 Click on the image to enlarge 
 </p>
 
@@ -122,10 +131,11 @@ The app development started from a sketch that prioritized the input and output 
 
 <p align="center">
     <img src="doc_homepage.png" alt="Mobile home page interface"></img>
-    🔎 Click on the image to enlarge 
     <br>
     <img src="src/img/doc_mobile_cipher.png" alt="Mobile cipher page interface"></img>
+    <br>
     🔎 Click on the image to enlarge 
+    <br>
 </p>
 
 ### 🕵️‍♀️ Usability test 
@@ -134,41 +144,49 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 
 &nbsp;
 ⚠️ There is not an explication about the app.
+
 &nbsp;
 ✔️ It was developed a home page with a little explanation about the app.
 
 &nbsp;
 ⚠️ It is not possible to know how many characters the message can have.
+
 &nbsp;
 ✔️ There is a character counter next to the input.
 
 &nbsp;
 ⚠️ It is difficult to read what is written on the buttons.
+
 &nbsp;
 ✔️ The color palette and design system were improved to guarantee the contrast of the colors and also the font size was raised.
 
 &nbsp;
 ⚠️ After press the _start again button_, the app brokes.
+
 &nbsp;
 ✔️ Only the clear button remains since the star again did not provide a better user experience.
 
 &nbsp;
 ⚠️ Starts with one encrypt method already checked.
+
 &nbsp;
 ✔️ It changed the buttons _encode_ and _decode_ for inputs type radio, so when the user access the cipher page the method encode is already checked.
 
 &nbsp;
 ⚠️ It does not have feedback if the _copy button_ really worked.
+
 &nbsp;
 ✔️ After the user clicks on the _copy button_, the inner text changes to _copied_ for a few seconds.
 
 &nbsp;
 ⚠️ The user can write on the output text area.
+
 &nbsp;
 ✔️ The output text area changed to _read-only_.
 
 &nbsp;
 ⚠️ After starting type it is not possible to know what kind of information it is necessary to write in the input.
+
 &nbsp;
 ✔️ It was implemented the label of all inputs.
 
@@ -189,15 +207,15 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 &nbsp;
 📌 Let the _copy_ and _clear_ buttons disabled while there is not a message to encrypt
 
-<p align='right'>
-  <a href='#-millennium'> Back to the top. </a>
+<p align="right">
+  <a href="#millennium"> Back to the top. </a>
 </p>
 
 ---
 
 ## 🚀 Getting Started 
 
-The file is structured as follows:
+📂 The file is structured as follows:
 
 ```text
 ./
@@ -221,7 +239,7 @@ The file is structured as follows:
     └── cipher.spec.js
 ```
 
-Before running the app, you need to have installed these tools on your computer: [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/).
+🧭 Before running the app, you need to have installed these tools on your computer: [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/).
 
 ```bash
 
@@ -267,8 +285,8 @@ $ git push origin my-feature
 
 ```
 
-<p align='right'>
-  <a href='#-millennium'> Back to the top. </a>
+<p align="right">
+  <a href="#millennium"> Back to the top. </a>
 </p>
 
 ---
@@ -284,8 +302,8 @@ $ git push origin my-feature
 &nbsp;
 🛠 CSS3
 
-<p align='right'>
-  <a href='#-millennium'> Back to the top. </a>
+<p align="right">
+  <a href="#millennium"> Back to the top. </a>
 </p>
 
 ---
@@ -295,6 +313,6 @@ $ git push origin my-feature
 &nbsp;
 Developed with ❤️ by [Beatriz Penalva](https://github.com/beatrizpenalva) | Find me on [Linkedin](https://www.linkedin.com/in/beatrizpenalva/) 👋
 
-<p align='right'>
-  <a href='#-millennium'> Back to the top. </a>
+<p align="right">
+  <a href="#millennium"> Back to the top. </a>
 </p>
