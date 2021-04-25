@@ -22,7 +22,7 @@
 The proposal was to develop an app to encode and decode messages using the Ceaser Cipher method in two weeks, using only vanilla JavaScript, HTML5 and CSS3. The first project developed in [Laboratoria](https://www.laboratoria.la/) Bootcamp.
 
 <p align="center">
-  <img src"https://i.giphy.com/media/AWv3UAFkgz39u/giphy.webp"></img>
+  <img src="https://i.giphy.com/media/AWv3UAFkgz39u/giphy.webp"></img>
 </p>
 
 <p align="right">
@@ -129,7 +129,7 @@ The app development started from a sketch that prioritized the input and output 
 
 <p align="center">
     <img src="src/img/doc_mobile_home.png" alt="Mobile home page interface"></img>
-    <img src="src/img/doc_mobile_cipher.png" alt="Mobile cipher page interface"></img>
+    <img src="src/img/doc_mobile_cipher.png" alt="Mobile cipher page interface" margin-left="50"></img>
     <br>
     🔎 Click on the image to enlarge 
     <br>
