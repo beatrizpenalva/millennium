@@ -329,16 +329,19 @@ header {
   overflow: auto;
   font: var(--main-txt);
   color: var(--white);
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.08)
 }
 
-.text-message:focus {
-  background-color: var(--secondary-color-variant);
-}
-
-.cipher-container input:focus,
+.text-message:focus, .cipher-container input:focus,
 .row-input input[type="number"]:focus {
   background-color: var(--secondary-color-variant);
+  color: var(--white);
+}
+
+.text-message:focus::placeholder, .cipher-container input:focus::placeholder,
+.row-input input[type="number"]:focus::placeholder {
+  font-weight: lighter;
+  color: var(--white);
 }
 
 label {

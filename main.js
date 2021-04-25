@@ -44,5 +44,6 @@ function copyFinalMessage() {
 
 function cleanFinalMessage() {
   document.querySelector("#message").value = "";
+  document.querySelector("#count-caracteres").innerHTML = "0";
   document.querySelector("#final-message").innerHTML = "";
 }
