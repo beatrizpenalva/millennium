@@ -129,7 +129,7 @@ The app development started from a sketch that prioritized the input and output 
 
 <p align="center">
     <img src="src/img/doc_mobile_home.png" alt="Mobile home page interface"></img>
-    <img src="src/img/doc_mobile_cipher.png" alt="Mobile cipher page interface" margin-left="50"></img>
+    <img src="src/img/doc_mobile_cipher.png" alt="Mobile cipher page interface"></img>
     <br>
     🔎 Click on the image to enlarge 
     <br>
