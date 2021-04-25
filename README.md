@@ -1,7 +1,9 @@
 <h1 align="center" id="millennium"> 📬 Millennium </h1>
 
 <p align="center">
-  ⚡ An app for journalists and their informants exchange messages encrypted by the Caesar Cipher method. To access click <a href='https://beatrizpenalva.github.io/millennium/'>here</a>! ⚡ 
+  An app for journalists and their informants exchange messages encrypted by the Caesar Cipher method. 
+  <br>
+  ⚡ To access click <a href='https://beatrizpenalva.github.io/millennium/'>here</a>! ⚡ 
 </p>
 
 <p align="center">
@@ -20,7 +22,7 @@
 The proposal was to develop an app to encode and decode messages using the Ceaser Cipher method in two weeks, using only vanilla JavaScript, HTML5 and CSS3. The first project developed in [Laboratoria](https://www.laboratoria.la/) Bootcamp.
 
 <p align="center">
-  <img src"https://media2.giphy.com/media/AWv3UAFkgz39u/giphy.gif"></img>
+  <img src"https://i.giphy.com/media/AWv3UAFkgz39u/giphy.webp"></img>
 </p>
 
 <p align="right">
@@ -55,12 +57,6 @@ Other  features:
  - [x] The user can copy the message encrypted by clicking in one button
  - [x] The user can reset the message to encrypt by clicking in one button
 
-You can see the app working in its old layout version:
-
-<p align="center">
-    <img src="src/img/GIF_first-version.gif"></img>
-</p>
-
 <p align="right">
   <a href="#millennium"> Back to the top. </a>
 </p>
@@ -80,6 +76,8 @@ The User Interface's aesthetic was inspired by the true protagonist of the Mille
 <p align="center">
     <img src="src/img/color-palette.png"></img>
 </p>
+
+The Color blindness simulator shows what colors are in conflict, attending people with Deuteranopia, Protanopia and Tritanopia, (respectively in the image).
 
 <p align="center">
     <img src="src/img/color-palette-dalto.png"></img>
@@ -130,8 +128,7 @@ The app development started from a sketch that prioritized the input and output 
 #### Mobile interface
 
 <p align="center">
-    <img src="doc_homepage.png" alt="Mobile home page interface"></img>
-    <br>
+    <img src="src/img/doc_mobile_home.png" alt="Mobile home page interface"></img>
     <img src="src/img/doc_mobile_cipher.png" alt="Mobile cipher page interface"></img>
     <br>
     🔎 Click on the image to enlarge 
@@ -142,11 +139,13 @@ The app development started from a sketch that prioritized the input and output 
 
 The User Experience was focused on being an intuitive and practical tool, in that way, the user will spend the minimum time using the product. But to improve the app usability it was necessary to apply tests and the feedback was:
 
+
 &nbsp;
 ⚠️ There is not an explication about the app.
 
 &nbsp;
 ✔️ It was developed a home page with a little explanation about the app.
+
 
 &nbsp;
 ⚠️ It is not possible to know how many characters the message can have.
@@ -154,11 +153,13 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 &nbsp;
 ✔️ There is a character counter next to the input.
 
+
 &nbsp;
 ⚠️ It is difficult to read what is written on the buttons.
 
 &nbsp;
 ✔️ The color palette and design system were improved to guarantee the contrast of the colors and also the font size was raised.
+
 
 &nbsp;
 ⚠️ After press the _start again button_, the app brokes.
@@ -166,11 +167,13 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 &nbsp;
 ✔️ Only the clear button remains since the star again did not provide a better user experience.
 
+
 &nbsp;
 ⚠️ Starts with one encrypt method already checked.
 
 &nbsp;
 ✔️ It changed the buttons _encode_ and _decode_ for inputs type radio, so when the user access the cipher page the method encode is already checked.
+
 
 &nbsp;
 ⚠️ It does not have feedback if the _copy button_ really worked.
@@ -178,11 +181,13 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 &nbsp;
 ✔️ After the user clicks on the _copy button_, the inner text changes to _copied_ for a few seconds.
 
+
 &nbsp;
 ⚠️ The user can write on the output text area.
 
 &nbsp;
 ✔️ The output text area changed to _read-only_.
+
 
 &nbsp;
 ⚠️ After starting type it is not possible to know what kind of information it is necessary to write in the input.
