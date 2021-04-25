@@ -66,11 +66,11 @@ a {
   --primary-color: #6a63fe;
   --secondary-color: #2f2e40;
   --secondary-color-variant: #8985a8;
-  --main-txt-color: #f2f2f3;
+  --white: #f2f2f3;
   --bg-color: #403e56;
   --btn-bg-color: var(--primary-color);
   --btn-bg-color-hv: var(--secondary-color-variant);
-  --btn-txt-color: var(--main-txt-color);
+  --btn-txt-color: var(--white);
   --btn-txt-color-hv: var(--secondary-color);
   --btn-border: 10px;
 }
@@ -87,7 +87,7 @@ main {
 
 label {
   font: var(--subtitle-txt);
-  color: var(--main-txt-color);
+  color: var(--white);
 }
 
 footer {
@@ -102,7 +102,7 @@ footer {
   width: 100%;
   height: 60px;
   background-color: var(--secondary-color-variant);
-  color: var(--main-txt-color);
+  color: var(--white);
   font: var(--btn-txt);
 }
 
@@ -201,7 +201,7 @@ input:checked {
 
 .home-container article {
   text-align: center;
-  color: var(--main-txt-color);
+  color: var(--white);
   font: var(--main-txt);
 }
 
@@ -214,7 +214,7 @@ input:checked {
 header {
   text-align: center;
   font: var(--title-txt);
-  color: var(--main-txt-color);
+  color: var(--white);
 }
 
 .row-input {
@@ -229,7 +229,7 @@ header {
   margin: 0 10px;
   padding: 10px;
   font: var(--btn-txt);
-  color: var(--main-txt-color);
+  color: var(--white);
   background-color: transparent;
   border: none;
   border-bottom: 2px solid var(--btn-bg-color);
@@ -297,7 +297,7 @@ header {
 
 .fa-chevron-left:hover,
 .fa-chevron-left:active {
-  color: var(--main-txt-color);
+  color: var(--white);
 }
 
 .buttons-container {
@@ -328,7 +328,7 @@ header {
   outline: none;
   overflow: auto;
   font: var(--main-txt);
-  color: var(--main-txt-color);
+  color: var(--white);
   background-color: transparent;
 }
 
