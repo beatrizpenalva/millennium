@@ -195,7 +195,7 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 &nbsp;
 ✔️ It was implemented the label of all inputs.
 
-### 🚧Future implementations
+### 🚧 Future implementations
 
 &nbsp;
 📌 Make it clear that the secret key is mandatory.
@@ -316,7 +316,7 @@ $ git push origin my-feature
 ## 🦸 Author
 
 <p align="center">
-  Developed with ❤️ by <a href="https://github.com/beatrizpenalva">Beatriz Penallva</a>, find me on <a href="https://www.linkedin.com/in/beatrizpenalva/">Linkedin</a>. 👋
+  Developed with ❤️ by <a href="https://github.com/beatrizpenalva">Beatriz Penalva</a>, find me on <a href="https://www.linkedin.com/in/beatrizpenalva/">Linkedin</a>. 👋
   <br>
   Project developed in Laboratoria <a href="https://www.laboratoria.la/">Laboratoria</a> Bootcamp.
 </p>
