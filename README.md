@@ -19,7 +19,7 @@
 
 ## 🎯 Challenge
 
-The proposal was to develop an app to encode and decode messages using the Ceaser Cipher method in two weeks, using only vanilla JavaScript, HTML5 and CSS3. The first project developed in [Laboratoria](https://www.laboratoria.la/) Bootcamp.
+The proposal was to develop an app to encode and decode messages using the Ceaser Cipher method in two weeks, using only vanilla JavaScript, HTML5 and CSS3.
 
 <p align="center">
   <img src="https://i.giphy.com/media/AWv3UAFkgz39u/giphy.webp"></img>
@@ -31,7 +31,7 @@ The proposal was to develop an app to encode and decode messages using the Cease
 
 ---
 
-## 📧 About
+## 💡 About
 
 The Brazil Federal [Constitution](http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm) of 1988 in its Art. 5th, item XIV, institutes "access to information is guaranteed to all and confidentiality of the source is guaranteed, when necessary for professional practice". However, recent episodes of national policy exposed the fragility of the youth Brazilian democracy in several aspects, including the confidentiality of the source, such as the attempt to coerce the delivery of sources in the case of the press editorial [Vaza Jato](https://theintercept.com/series/mensagens-lava-jato/). 
  
@@ -43,7 +43,7 @@ So, a group of Brazilian Journalists hired the famous Scottish investigative jou
 
 ---
 
-## 💡 Development
+## 💻 Development
  
 ### ⚙️ Features
 
@@ -63,7 +63,7 @@ Other  features:
 
 ### 🎨 User interface
 
-The User Interface's aesthetic was inspired by the true protagonist of the Millennium trilogy, the hacker Wasp, also known as Lisbeth Salander. Therefore, the color palette was based on Salander's style and the background image, designed by [Katerina Limpitsouni]((https://undraw.co/)), was chosen to make reference to her profession. To check if the colors used have good contrast for people with daltonism, the color palette was tested using the [Adobe Accessibility Tool](https://color.adobe.com/pt/create/color-accessibility).
+The User Interface's aesthetic was inspired by the true protagonist of the Millennium trilogy, the hacker Wasp, also known as Lisbeth Salander. Therefore, the color palette was based on Salander's style and the background image, designed by [Katerina Limpitsouni]((https://undraw.co/)), was chosen to make reference to her profession. 
  
 #### Background
 
@@ -77,7 +77,7 @@ The User Interface's aesthetic was inspired by the true protagonist of the Mille
     <img src="src/img/color-palette.png"></img>
 </p>
 
-The Color blindness simulator shows what colors are in conflict, attending people with Deuteranopia, Protanopia and Tritanopia, (respectively in the image).
+To check if the colors used have good contrast for people with daltonism, the color palette was tested using the [Adobe Accessibility Tool](https://color.adobe.com/pt/create/color-accessibility). The Color blindness simulator shows what colors are in conflict, attending people with Deuteranopia, Protanopia and Tritanopia, (respectively in the image).
 
 <p align="center">
     <img src="src/img/color-palette-dalto.png"></img>
@@ -141,56 +141,56 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 
 
 &nbsp;
-⚠️ There is not an explication about the app.
+❌ There is not an explication about the app.
 
 &nbsp;
 ✔️ It was developed a home page with a little explanation about the app.
 
 
 &nbsp;
-⚠️ It is not possible to know how many characters the message can have.
+❌ It is not possible to know how many characters the message can have.
 
 &nbsp;
 ✔️ There is a character counter next to the input.
 
 
 &nbsp;
-⚠️ It is difficult to read what is written on the buttons.
+❌ It is difficult to read what is written on the buttons.
 
 &nbsp;
 ✔️ The color palette and design system were improved to guarantee the contrast of the colors and also the font size was raised.
 
 
 &nbsp;
-⚠️ After press the _start again button_, the app brokes.
+❌ After press the _start again button_, the app brokes.
 
 &nbsp;
 ✔️ Only the clear button remains since the star again did not provide a better user experience.
 
 
 &nbsp;
-⚠️ Starts with one encrypt method already checked.
+❌ Starts with one encrypt method already checked.
 
 &nbsp;
 ✔️ It changed the buttons _encode_ and _decode_ for inputs type radio, so when the user access the cipher page the method encode is already checked.
 
 
 &nbsp;
-⚠️ It does not have feedback if the _copy button_ really worked.
+❌ It does not have feedback if the _copy button_ really worked.
 
 &nbsp;
 ✔️ After the user clicks on the _copy button_, the inner text changes to _copied_ for a few seconds.
 
 
 &nbsp;
-⚠️ The user can write on the output text area.
+❌ The user can write on the output text area.
 
 &nbsp;
 ✔️ The output text area changed to _read-only_.
 
 
 &nbsp;
-⚠️ After starting type it is not possible to know what kind of information it is necessary to write in the input.
+❌ After starting type it is not possible to know what kind of information it is necessary to write in the input.
 
 &nbsp;
 ✔️ It was implemented the label of all inputs.
@@ -198,19 +198,19 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 ### 🚧Future implementations
 
 &nbsp;
-📌 Make it clear that the secret key is mandatory
+📌 Make it clear that the secret key is mandatory.
 
 &nbsp;
-📌 Allow the user to see the secret key on the cipher page
+📌 Allow the user to see the secret key on the cipher page.
 
 &nbsp;
-📌 Confirm if the user really want to reset the inputs
+📌 Confirm if the user really want to reset the inputs.
 
 &nbsp;
-📌 Make it clear that the user can choose between _encode_ and _decode_ 
+📌 Make it clear that the user can choose between _encode_ and _decode_.
 
 &nbsp;
-📌 Let the _copy_ and _clear_ buttons disabled while there is not a message to encrypt
+📌 Let the _copy_ and _clear_ buttons disabled while there is not a message to encrypt.
 
 <p align="right">
   <a href="#millennium"> Back to the top. </a>
@@ -244,7 +244,7 @@ The User Experience was focused on being an intuitive and practical tool, in tha
     └── cipher.spec.js
 ```
 
-🧭 Before running the app, you need to have installed these tools on your computer: [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/).
+🔰 Before running the app, you need to have installed these tools on your computer: [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/).
 
 ```bash
 
@@ -315,8 +315,11 @@ $ git push origin my-feature
 
 ## 🦸 Author
 
-&nbsp;
-Developed with ❤️ by [Beatriz Penalva](https://github.com/beatrizpenalva) | Find me on [Linkedin](https://www.linkedin.com/in/beatrizpenalva/) 👋
+<p align="center">
+  Developed with ❤️ by <a href="https://github.com/beatrizpenalva">Beatriz Penallva</a>, find me on <a href="https://www.linkedin.com/in/beatrizpenalva/">Linkedin</a>. 👋
+  <br>
+  Project developed in Laboratoria <a href="https://www.laboratoria.la/">Laboratoria</a> Bootcamp.
+</p>
 
 <p align="right">
   <a href="#millennium"> Back to the top. </a>
