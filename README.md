@@ -197,20 +197,10 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 
 ### 🚧 Future implementations
 
-&nbsp;
-📌 Make it clear that the secret key is mandatory.
-
-&nbsp;
-📌 Allow the user to see the secret key on the cipher page.
-
-&nbsp;
-📌 Confirm if the user really want to reset the inputs.
-
-&nbsp;
-📌 Make it clear that the user can choose between _encode_ and _decode_.
-
-&nbsp;
-📌 Let the _copy_ and _clear_ buttons disabled while there is not a message to encrypt.
+ - [ ] Make it clear that the secret key is mandatory.
+ - [ ] Allow the user to see the secret key on the cipher page.
+ - [ ] Confirm if the user really want to reset the inputs.
+ - [ ] Let the _copy_ and _clear_ buttons disabled while there is not a message to encrypt.
 
 <p align="right">
   <a href="#millennium"> Back to the top. </a>
