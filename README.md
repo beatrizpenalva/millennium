@@ -22,7 +22,7 @@
 The proposal was to develop an app to encode and decode messages using the Ceaser Cipher method in two weeks, using only vanilla JavaScript, HTML5 and CSS3.
 
 <p align="center">
-  <img src="https://i.giphy.com/media/10UfKOBTXYoYG4/giphy.webp" alt="Lisbeth Salander smoking and saying that everyone has secrets"></img>
+  <img src="https://i.giphy.com/media/AWv3UAFkgz39u/giphy.webp" alt="Barney Stinson saying challenge accepted"></img>
 </p>
 
 <p align="right">
