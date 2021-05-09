@@ -22,7 +22,7 @@
 The proposal was to develop an app to encode and decode messages using the Ceaser Cipher method in two weeks, using only vanilla JavaScript, HTML5 and CSS3.
 
 <p align="center">
-  <img src="https://i.giphy.com/media/AWv3UAFkgz39u/giphy.webp"></img>
+  <img src="https://i.giphy.com/media/10UfKOBTXYoYG4/giphy.webp" alt="Lisbeth Salander smoking and saying that everyone has secrets"></img>
 </p>
 
 <p align="right">
@@ -65,6 +65,10 @@ Other  features:
 
 The User Interface's aesthetic was inspired by the true protagonist of the Millennium trilogy, the hacker Wasp, also known as Lisbeth Salander. Therefore, the color palette was based on Salander's style and the background image, designed by [Katerina Limpitsouni]((https://undraw.co/)), was chosen to make reference to her profession. 
  
+<p align="center">
+  <img src="https://i.giphy.com/media/3oEduYirbRSRtMOG1a/giphy.webp" alt="Lisbeth Salander hacking"></img>
+</p>
+
 #### Background
 
 <p align="center">
