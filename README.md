@@ -19,7 +19,7 @@
 
 ## 🎯 Challenge
 
-The proposal was to develop an app to encode and decode messages using the Ceaser Cipher method in two weeks, using only vanilla JavaScript, HTML5 and CSS3.
+The proposal was to develop an app to encode and decode messages using the Ceaser Cipher method in two weeks, using only vanilla JavaScript, HTML5 and CSS3. To know more about the challenge click [here](https://github.com/Laboratoria/SAP005-cipher).
 
 <p align="center">
   <img src="https://i.giphy.com/media/AWv3UAFkgz39u/giphy.webp" alt="Barney Stinson saying challenge accepted"></img>
@@ -56,10 +56,6 @@ To encode a message the user needs to:
 Other  features:
  - [x] The user can copy the message encrypted by clicking in one button
  - [x] The user can reset the message to encrypt by clicking in one button
-
-<p align="right">
-  <a href="#millennium"> Back to the top. </a>
-</p>
 
 ### 🎨 User interface
 
@@ -313,6 +309,10 @@ $ git push origin my-feature
   Developed with ❤️ by <a href="https://github.com/beatrizpenalva">Beatriz Penalva</a>, find me on <a href="https://www.linkedin.com/in/beatrizpenalva/">Linkedin</a>. 👋
   <br>
   Project developed in Laboratoria <a href="https://www.laboratoria.la/">Laboratoria</a> Bootcamp.
+</p>
+
+<p align="center">
+  <img src="https://i.giphy.com/media/Pla0PNdXVHbqlEmiy4/giphy.webp" alt="Barney Stinson saying challenge accepted"></img>
 </p>
 
 <p align="right">
