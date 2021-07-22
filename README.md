@@ -139,61 +139,19 @@ The app development started from a sketch that prioritized the input and output 
 
 The User Experience was focused on being an intuitive and practical tool, in that way, the user will spend the minimum time using the product. But to improve the app usability it was necessary to apply tests and the feedback was:
 
-
-&nbsp;
-❌ There is not an explication about the app.
-
-&nbsp;
-✔️ It was developed a home page with a little explanation about the app.
-
-
-&nbsp;
-❌ It is not possible to know how many characters the message can have.
-
-&nbsp;
-✔️ There is a character counter next to the input.
-
-
-&nbsp;
-❌ It is difficult to read what is written on the buttons.
-
-&nbsp;
-✔️ The color palette and design system were improved to guarantee the contrast of the colors and also the font size was raised.
-
-
-&nbsp;
-❌ After press the _start again button_, the app brokes.
-
-&nbsp;
-✔️ Only the clear button remains since the star again did not provide a better user experience.
-
-
-&nbsp;
-❌ Starts with one encrypt method already checked.
-
-&nbsp;
-✔️ It changed the buttons _encode_ and _decode_ for inputs type radio, so when the user access the cipher page the method encode is already checked.
-
-
-&nbsp;
-❌ It does not have feedback if the _copy button_ really worked.
-
-&nbsp;
-✔️ After the user clicks on the _copy button_, the inner text changes to _copied_ for a few seconds.
-
-
-&nbsp;
-❌ The user can write on the output text area.
-
-&nbsp;
-✔️ The output text area changed to _read-only_.
-
-
-&nbsp;
-❌ After starting type it is not possible to know what kind of information it is necessary to write in the input.
-
-&nbsp;
-✔️ It was implemented the label of all inputs.
+| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
+|                         ❌                         |                                    ❌                                    |
+|     There is not an explication about the app.	    |    It is not possible to know how many characters the message can have.  |
+| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
+|                         ✔️                         |                                    ✔️                                    |
+|   It was developed a home page with a 'about' text. |              There is a character counter next to the input.             |
+| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
+|                         ❌                         |                                    ❌                                    |
+|     The user can write on the output text area.	    |       It does not have feedback if the _copy button_ really worked.      | 
+| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
+|                         ✔️                         |                                    ✔️                                    |
+|     The output text area changed to _read-only_.    |    The _copy button_, The inner text changes to _copied_ after click.    |
+| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
 
 ### 🚧 Future implementations
 
