@@ -139,19 +139,16 @@ The app development started from a sketch that prioritized the input and output 
 
 The User Experience was focused on being an intuitive and practical tool, in that way, the user will spend the minimum time using the product. But to improve the app usability it was necessary to apply tests and the feedback was:
 
-| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
+
 |                         ❌                         |                                    ❌                                    |
 |     There is not an explication about the app.	    |    It is not possible to know how many characters the message can have.  |
-| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
 |                         ✔️                         |                                    ✔️                                    |
 |   It was developed a home page with a 'about' text. |              There is a character counter next to the input.             |
-| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
 |                         ❌                         |                                    ❌                                    |
 |     The user can write on the output text area.	    |       It does not have feedback if the _copy button_ really worked.      | 
-| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
 |                         ✔️                         |                                    ✔️                                    |
 |     The output text area changed to _read-only_.    |    The _copy button_, The inner text changes to _copied_ after click.    |
-| :-------------------------------------------------:	| :----------------------------------------------------------------------: | 
+
 
 ### 🚧 Future implementations
 
