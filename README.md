@@ -139,8 +139,8 @@ The app development started from a sketch that prioritized the input and output 
 
 The User Experience was focused on being an intuitive and practical tool, in that way, the user will spend the minimum time using the product. But to improve the app usability it was necessary to apply tests and the feedback was:
 
-|:--------------------------------------------------------------------:|:------------------------------------------------------------------:|
 |                              Problems ❌                             |                           Solutions ✔️                            |
+|:--------------------------------------------------------------------:|:------------------------------------------------------------------:|
 |              There is not an explication about the app.	             |          It was developed a home page with a 'about' text.         |
 |              The user can write on the output text area.	           |            The output text area changed to _read-only_.            |
 |     It does not have feedback if the _copy button_ really worked.    | The _copy button_, The inner text changes to _copied_ after click. | 
