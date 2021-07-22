@@ -142,10 +142,13 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 
 |                         ❌                         |                                    ❌                                    |
 |     There is not an explication about the app.	    |    It is not possible to know how many characters the message can have.  |
+|:---------------------------------------------------:|:------------------------------------------------------------------------:|
 |                         ✔️                         |                                    ✔️                                    |
 |   It was developed a home page with a 'about' text. |              There is a character counter next to the input.             |
+|:---------------------------------------------------:|:------------------------------------------------------------------------:|
 |                         ❌                         |                                    ❌                                    |
 |     The user can write on the output text area.	    |       It does not have feedback if the _copy button_ really worked.      | 
+|:---------------------------------------------------:|:------------------------------------------------------------------------:|
 |                         ✔️                         |                                    ✔️                                    |
 |     The output text area changed to _read-only_.    |    The _copy button_, The inner text changes to _copied_ after click.    |
 
