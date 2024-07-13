@@ -10,7 +10,9 @@
  <a href="#-challenge">Challenge</a> •
  <a href="#-about">About</a> •
  <a href="#-development">Development</a> • 
+ <a href="#-scaffolding">Scaffolding</a> • 
  <a href="#-getting-started">Getting Started</a> • 
+ <a href="#-getting-started">How to contribute</a> • 
  <a href="#-build-with">Build With</a> • 
  <a href="#-author">Author</a>
 </p>
@@ -158,10 +160,8 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 </p>
 
 ---
-
-## 🚀 Getting Started 
-
-📂 The file is structured as follows:
+## 📂 Scaffolding
+The project folders and files were structured as it follows:
 
 ```text
 ./
@@ -185,7 +185,9 @@ The User Experience was focused on being an intuitive and practical tool, in tha
     └── cipher.spec.js
 ```
 
-🔰 Before running the app, you need to have installed these tools on your computer: [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/).
+---
+## 🚀 Getting Started 
+Before running the app, you need to have installed these tools on your computer: [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/). Check the package.json file to see which Node version the project is using it.
 
 ```bash
 
@@ -213,7 +215,8 @@ $ npm run deploy
 
 ```
 
-👊 To contribute to this project:
+## 👩‍💻 How to contribute
+Before you need to install the app locally, if you did not have installed yet read the section: [Getting Started](#-getting-started).
 
 ```bash
 
