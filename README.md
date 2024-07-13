@@ -7,13 +7,20 @@
 </p>
 
 <p align="center">
+<img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+<img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
+<img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+</p>
+
+---
+
+<p align="center">
  <a href="#-challenge">Challenge</a> •
  <a href="#-about">About</a> •
  <a href="#-development">Development</a> • 
  <a href="#-scaffolding">Scaffolding</a> • 
  <a href="#-getting-started">Getting Started</a> • 
- <a href="#-getting-started">How to contribute</a> • 
- <a href="#-build-with">Build With</a> • 
+ <a href="#-getting-started">How to contribute</a> •  
  <a href="#-author">Author</a>
 </p>
 
@@ -160,6 +167,7 @@ The User Experience was focused on being an intuitive and practical tool, in tha
 </p>
 
 ---
+
 ## 📂 Scaffolding
 The project folders and files were structured as it follows:
 
@@ -185,7 +193,12 @@ The project folders and files were structured as it follows:
     └── cipher.spec.js
 ```
 
+<p align="right">
+  <a href="#millennium"> Back to the top. </a>
+</p>
+
 ---
+
 ## 🚀 Getting Started 
 Before running the app, you need to have installed these tools on your computer: [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/). Check the package.json file to see which Node version the project is using it.
 
@@ -215,6 +228,12 @@ $ npm run deploy
 
 ```
 
+<p align="right">
+  <a href="#millennium"> Back to the top. </a>
+</p>
+
+---
+
 ## 👩‍💻 How to contribute
 Before you need to install the app locally, if you did not have installed yet read the section: [Getting Started](#-getting-started).
 
@@ -233,23 +252,6 @@ $ git commit -m "feature: My new feature"
 $ git push origin my-feature
 
 ```
-
-<p align="right">
-  <a href="#millennium"> Back to the top. </a>
-</p>
-
----
-
-## 👩‍💻 Build With
-
-&nbsp;
-🛠 JavaScript (ES6)
-
-&nbsp;
-🛠 HTML5
-
-&nbsp;
-🛠 CSS3
 
 <p align="right">
   <a href="#millennium"> Back to the top. </a>
